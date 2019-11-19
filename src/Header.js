@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import 'typeface-roboto';
+import './Header.css';
 import LinkButton from './LinkButton';
 
 class Header extends Component {
   
   render () {
     return (
-      <div>
+      <div id="header-container">
       <LinkButton />
       </div>
     );
