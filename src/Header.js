@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import 'typeface-roboto';
 import './Header.css';
 import LinkButton from './LinkButton';
 

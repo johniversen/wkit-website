@@ -1,6 +1,8 @@
 #header-container {
   text-align: center;
   background-color: lightpink;
-  height: 80px;
-  line-height: 80px;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

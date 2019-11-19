@@ -1,6 +1,8 @@
 #trust-container {
   text-align: center;
   background-color: lightsteelblue;
-  height: 350px;
-  line-height: 350px;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

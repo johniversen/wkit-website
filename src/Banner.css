@@ -1,6 +1,13 @@
 #banner-container {
   text-align: center;
   background-color: aqua;
-  height: 220px;
-  line-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15rem;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: bold;
 }

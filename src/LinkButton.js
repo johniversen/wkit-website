@@ -1,5 +1,4 @@
 import React from 'react';
-import 'typeface-roboto';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 

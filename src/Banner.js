@@ -5,7 +5,9 @@ class Banner extends Component {
   render () {
     return (
       <div id="banner-container">
-        Här kommer vår banner ligga.
+        <h1>
+          SVERIGES FRÄMSTA STUDENTER TILL BRANSCHENS BÄSTA PRISER
+        </h1>
       </div>
     );
   }
