@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
-import LinkButton from './LinkButton';
+import LinkButton from '../Buttons/components/LinkButton';
 
 class Header extends Component {
   
