@@ -15,12 +15,14 @@ const Header = (props) => {
   justify-content: space-between;
   flex-direction: row;
   height: 5rem;
+  width: 80%;
+  margin: auto;
   `
 
 const HeaderImg = styled.img.attrs({
   src: Logo
 })`
-max-height: 90%;
+max-height: 80%;
 `
 
   return (
