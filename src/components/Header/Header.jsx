@@ -1,12 +1,10 @@
 import React from "react";
 import styled from 'styled-components';
-import { COLORS } from "../../variables/colors";
 import ButtonContainer from '../Buttons';
 import { withRouter } from "react-router";
+import Logo from '../../assets/logo.png';
 
 const Header = (props) => {
-  const c = { ...COLORS };
-
   const aboutClick = () => {
     props.history.push("/about");
   }
@@ -14,17 +12,28 @@ const Header = (props) => {
   const StyledSection = styled.section`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: row;
-  background-color: ${c.navBlue};
   height: 5rem;
   `
 
+const HeaderImg = styled.img.attrs({
+  src: Logo
+})`
+max-height: 90%;
+`
+
   return (
     <StyledSection>
+      <HeaderImg />
       <div>
-      <ButtonContainer buttonFunction={aboutClick} buttonText={"OM OSS"} />
-      <ButtonContainer buttonText={"KONTAKT"} />
+        <ButtonContainer buttonFunction={aboutClick} buttonText={"OM OSS"} />
+        <ButtonContainer buttonText={"KONTAKT"} />
+      </div>
+      <div>
+        <ButtonContainer buttonText={"FACEBOOK"} />
+        <ButtonContainer buttonText={"INSTAGRAM"} />
+        <ButtonContainer buttonText={"LINKEDIN"} />
       </div>
     </StyledSection>
   );
