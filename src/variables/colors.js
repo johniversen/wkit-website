@@ -1,3 +1,4 @@
 export const COLORS = {
-  backgroundGreen: 'lightGreen'
+  backgroundGreen: 'lightGreen',
+  navBlue: 'lightblue'
 }

@@ -1,16 +1,33 @@
-import React, { Component } from 'react';
-import './Header.css';
-import LinkButton from '../Buttons/components/LinkButton';
+import React from "react";
+import styled from 'styled-components';
+import { COLORS } from "../../variables/colors";
+import ButtonContainer from '../Buttons';
+import { withRouter } from "react-router";
 
-class Header extends Component {
-  
-  render () {
-    return (
-      <div id="header-container">
-      <LinkButton />
-      </div>
-    );
+const Header = (props) => {
+  const c = { ...COLORS };
+
+  const aboutClick = () => {
+    props.history.push("/about");
   }
+
+  const StyledSection = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: ${c.navBlue};
+  height: 5rem;
+  `
+
+  return (
+    <StyledSection>
+      <div>
+      <ButtonContainer buttonFunction={aboutClick} buttonText={"OM OSS"} />
+      <ButtonContainer buttonText={"KONTAKT"} />
+      </div>
+    </StyledSection>
+  );
 }
 
-export default Header;
+export default withRouter(Header);
