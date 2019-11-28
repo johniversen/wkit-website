@@ -17,8 +17,9 @@ const Products = () => {
   `
 
   const StyledProcutContainer = styled.div`
+  
   `
-
+  
   return (
     <StyledSection>
       <StyledProcutContainer>
