@@ -5,9 +5,9 @@ const Buttons = (props) => {
   const { handleClick, buttonText } = props;
 
   return (
-    <Button onClick={handleClick} >
-      {buttonText}
-    </Button>
+      <Button onClick={handleClick} >
+        {buttonText}
+      </Button>
   )
 }
 

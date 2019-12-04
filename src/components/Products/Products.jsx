@@ -40,6 +40,8 @@ const Products = () => {
 
   const StyledP = styled.p`
   margin-bottom: 2rem;
+  font-size: 1.1rem;
+  font-weight: lighter;
   `
   
   return (
