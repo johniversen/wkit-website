@@ -45,9 +45,9 @@ max-height: 80%;
         <ButtonContainer buttonText={"KONTAKT"} />
       </div>
       <div>
-        <ButtonContainer buttonFunction={facebookClick} buttonText={<i class="fab fa-facebook-f"></i>} />
-        <ButtonContainer buttonFunction={instagramClick} buttonText={<i class="fab fa-instagram"></i>} />
-        <ButtonContainer buttonFunction={linkedinClick} buttonText={<i class="fab fa-linkedin"></i>} />
+        <ButtonContainer buttonFunction={facebookClick} buttonText={<i className="fab fa-facebook-f"></i>} />
+        <ButtonContainer buttonFunction={instagramClick} buttonText={<i className="fab fa-instagram"></i>} />
+        <ButtonContainer buttonFunction={linkedinClick} buttonText={<i className="fab fa-linkedin"></i>} />
       </div>
     </StyledSection>
   );
