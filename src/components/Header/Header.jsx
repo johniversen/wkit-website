@@ -9,6 +9,18 @@ const Header = (props) => {
     props.history.push("/about");
   }
 
+  const facebookClick = () => {
+    window.location.href = "https://www.facebook.com/WeKnowITswe/";
+  }
+
+  const instagramClick = () => {
+    window.location.href = "https://www.instagram.com/weknowitswe/";
+  }
+
+  const linkedinClick = () => {
+    window.location.href = "https://se.linkedin.com/company/we-know-it";
+  }
+
   const StyledSection = styled.section`
   display: flex;
   align-items: center;
@@ -33,9 +45,9 @@ max-height: 80%;
         <ButtonContainer buttonText={"KONTAKT"} />
       </div>
       <div>
-        <ButtonContainer buttonText={"FACEBOOK"} />
-        <ButtonContainer buttonText={"INSTAGRAM"} />
-        <ButtonContainer buttonText={"LINKEDIN"} />
+        <ButtonContainer buttonFunction={facebookClick} buttonText={<i class="fab fa-facebook-f"></i>} />
+        <ButtonContainer buttonFunction={instagramClick} buttonText={<i class="fab fa-instagram"></i>} />
+        <ButtonContainer buttonFunction={linkedinClick} buttonText={<i class="fab fa-linkedin"></i>} />
       </div>
     </StyledSection>
   );

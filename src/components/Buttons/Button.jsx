@@ -1,13 +1,14 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
 
-const Button = (props) => {
+const Buttons = (props) => {
   const { handleClick, buttonText } = props;
 
   return (
-    <button onClick={handleClick} >
+    <Button onClick={handleClick} >
       {buttonText}
-    </button>
+    </Button>
   )
 }
 
-export default Button;
+export default Buttons;

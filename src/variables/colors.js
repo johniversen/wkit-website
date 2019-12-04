@@ -1,4 +1,4 @@
 export const COLORS = {
-  backgroundGreen: 'lightGreen',
+  wkitBlue: '#92E1E5',
   navBlue: 'lightblue'
 }
