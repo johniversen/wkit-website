@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { COLORS } from '../../variables/colors';
+import BannerImg from '../../assets/banner.png';
 
 const Banner = () => {
   const c = { ...COLORS };
@@ -11,13 +12,20 @@ const Banner = () => {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-color: ${c.backgroundGreen};
-  height: 15rem;
+  background-color: ${c.wkitBlue};
+  height: 39rem;
+  background-image: url(${BannerImg});
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   `
 
   const StyledH1 = styled.h1`
-  font-size: 2.3rem;
+  width: 65%;
+  font-size: 3rem;
   font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.39);
   `
 
   return (
