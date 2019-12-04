@@ -1,20 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import { COLORS } from '../../variables/colors';
 import ButtonContainer from '../Buttons';
 
 
 const Products = () => {
-  const c = { ...COLORS };
-
   const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: ${c.navBlue};
-  height: 32rem;
+  height: 38rem;
   `
 
   const StyledTopSection = styled.div`

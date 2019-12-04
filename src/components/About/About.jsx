@@ -8,7 +8,8 @@ const About = () => {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
-  height: 15rem;
+  flex-wrap: wrap;
+  height: 20rem;
   background-color: lightblue;
   `
 
@@ -23,14 +24,17 @@ const About = () => {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  text-align: center;
   height: 10rem;
   background-color: lightgreen;
   `
 
   const StyledH1 = styled.h1`
-  max-width: 80%;
-  font-size: 2.3rem;
+  width: 65%;
+  font-size: 3rem;
   font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.39);
   `
   
   return (

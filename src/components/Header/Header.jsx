@@ -20,6 +20,11 @@ const Header = (props) => {
   const linkedinClick = () => {
     window.location.href = "https://se.linkedin.com/company/we-know-it";
   }
+  
+  const homeClick = () => {
+    props.history.push("/")
+    console.log("Home clicked")
+  }
 
   const StyledSection = styled.section`
   display: flex;
@@ -34,12 +39,18 @@ const Header = (props) => {
 const HeaderImg = styled.img.attrs({
   src: Logo
 })`
-max-height: 80%;
+height: 4rem;
+cursor: pointer;
+`
+
+const StyledA = styled.a`
 `
 
   return (
     <StyledSection>
-      <HeaderImg />
+      <StyledA>
+        <HeaderImg onClick={homeClick} />
+      </StyledA>
       <div>
         <ButtonContainer buttonFunction={aboutClick} buttonText={"OM OSS"} />
         <ButtonContainer buttonText={"KONTAKT"} />
