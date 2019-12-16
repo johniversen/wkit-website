@@ -5,11 +5,15 @@ import WebsitesContainer from '../Websites';
 import AppsContainer from '../Apps';
 import DevelopmentContainer from '../Development';
 import StaffContainer from '../Staff';
-
+import Back from '../../assets/back.png';
 
 const Products = () => {
 
   const [toggledCard, setCurrentCard] = useState('default');
+
+  const backClick = () => {
+    
+  }
 
   const StyledSection = styled.section`
   display: flex;
@@ -50,8 +54,21 @@ const Products = () => {
   font-size: 1.1rem;
   font-weight: lighter;
   `
+
+  const StyledBackButton = styled.img.attrs({
+    src: Back
+  })`
+  height: 4rem;
+  cursor: pointer;
+  margin-left: 1%;
+  margin-top: 1%;
+  position: absolute;
+  z-index: 101;
+  `
   
   return (
+    <>
+    {toggledCard !== 'default' && <StyledBackButton onClick={ () => setCurrentCard('default')} />}
     <StyledSection>
     {toggledCard === 'website' && <WebsitesContainer />}
     {toggledCard === 'development' && <DevelopmentContainer />}
@@ -82,6 +99,7 @@ const Products = () => {
         </StyledProcutContainer>
       </StyledBottomSection>
     </StyledSection>
+    </>
   )
 }
 

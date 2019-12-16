@@ -25,6 +25,13 @@ const Header = (props) => {
     props.history.push("/")
   }
 
+  const StyledSticky = styled.div`
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  `
+
   const StyledSection = styled.section`
   display: flex;
   align-items: center;
@@ -46,20 +53,22 @@ const Header = (props) => {
   `
 
   return (
-    <StyledSection>
-      <StyledA>
-        <HeaderImg onClick={homeClick} />
-      </StyledA>
-      <div>
-        <ButtonContainer buttonFunction={aboutClick} buttonText={"OM OSS"} />
-        <ButtonContainer buttonText={"KONTAKT"} />
-      </div>
-      <div>
-        <ButtonContainer buttonFunction={facebookClick} buttonText={<i className="fab fa-facebook-f"></i>} />
-        <ButtonContainer buttonFunction={instagramClick} buttonText={<i className="fab fa-instagram"></i>} />
-        <ButtonContainer buttonFunction={linkedinClick} buttonText={<i className="fab fa-linkedin"></i>} />
-      </div>
-    </StyledSection>
+    <StyledSticky>
+      <StyledSection>
+        <StyledA>
+          <HeaderImg onClick={homeClick} />
+        </StyledA>
+        <div>
+          <ButtonContainer buttonFunction={aboutClick} buttonText={"OM OSS"} />
+          <ButtonContainer buttonText={"KONTAKT"} />
+        </div>
+        <div>
+          <ButtonContainer buttonFunction={facebookClick} buttonText={<i className="fab fa-facebook-f"></i>} />
+          <ButtonContainer buttonFunction={instagramClick} buttonText={<i className="fab fa-instagram"></i>} />
+          <ButtonContainer buttonFunction={linkedinClick} buttonText={<i className="fab fa-linkedin"></i>} />
+        </div>
+      </StyledSection>
+    </StyledSticky>
   );
 }
 
