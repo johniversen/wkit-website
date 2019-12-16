@@ -5,10 +5,7 @@ import { withRouter } from "react-router";
 import Logo from '../../assets/logo.png';
 
 const Footer = (props) => {
-  const aboutClick = () => {
-    props.history.push("/about");
-  }
-
+  
   const facebookClick = () => {
     window.location.href = "https://www.facebook.com/WeKnowITswe/";
   }

@@ -11,10 +11,6 @@ const Products = () => {
 
   const [toggledCard, setCurrentCard] = useState('default');
 
-  const backClick = () => {
-    
-  }
-
   const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
