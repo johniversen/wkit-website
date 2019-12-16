@@ -1,14 +1,22 @@
-import React, { Component } from 'react';
-import './Trust.css';
+import React from 'react';
+import styled from 'styled-components';
 
-class Trust extends Component {
-  render () {
-    return (
-      <div id="trust-container">
-        Här kommer vår avsnitt om trust ligga.
-      </div>
-    );
-  }
+const Trust = () => {
+  const StyledSection = styled.section`
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 35rem;
+  `
+  
+  return (
+    <StyledSection>
+      Här kommer vårt trust-stycke ligga.
+    </StyledSection>
+  )
 }
 
 export default Trust;
