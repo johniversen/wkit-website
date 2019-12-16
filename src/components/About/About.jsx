@@ -37,6 +37,29 @@ const About = () => {
   color: white;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.39);
   `
+
+  const StyledSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 38rem;
+  `
+
+  const StyledTopSection = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 90%;
+  `
+
+  const StyledBottomSection = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 90%;
+  `
   
   return (
     <>
@@ -52,6 +75,14 @@ const About = () => {
       En del av vår utbildning som studenter är att alltid vara uppdaterad på kommande trender och de senaste verktygen inom IT. Vi är en platt och flexibel organisation vilket gör att vi snabbt kan anpassa oss till en föränderlig omvärld. Det gör att vi alltid kan leverera moderna och kvalitativa lösningar till våra kunder.
       </StyledP>
     </StyledPSection>
+    <StyledSection>
+      <StyledTopSection>
+      
+      </StyledTopSection>
+      <StyledBottomSection>
+
+      </StyledBottomSection>
+    </StyledSection>
     </>
   )
 }

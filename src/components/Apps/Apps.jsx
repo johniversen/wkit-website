@@ -10,6 +10,8 @@ const Apps = () => {
   text-align: center;
   height: 38rem;
   background-color: lightgreen;
+  position: absolute;
+  z-index: 100;
   `
 
   const StyledTopSection = styled.div`

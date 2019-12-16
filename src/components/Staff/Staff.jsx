@@ -10,6 +10,8 @@ const Staff = () => {
   text-align: center;
   height: 38rem;
   background-color: lightyellow;
+  position: absolute;
+  z-index: 100;
   `
 
   const StyledTopSection = styled.div`
