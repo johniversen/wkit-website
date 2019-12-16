@@ -20,10 +20,6 @@ const Footer = (props) => {
   const linkedinClick = () => {
     window.location.href = "https://se.linkedin.com/company/we-know-it";
   }
-  
-  const homeClick = () => {
-    props.history.push("/")
-  }
 
   const StyledSection = styled.section`
   display: flex;
@@ -39,7 +35,6 @@ const Footer = (props) => {
     src: Logo
   })`
   height: 4rem;
-  cursor: pointer;
   `
 
   const StyledASection = styled.div`
@@ -56,7 +51,7 @@ const Footer = (props) => {
   return (
     <StyledSection>
       <StyledA>
-        <HeaderImg onClick={homeClick} />
+        <HeaderImg />
       </StyledA>
       <StyledASection>
         <StyledA>support@weknowit.se</StyledA>
