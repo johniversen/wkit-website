@@ -10,6 +10,8 @@ const Development = () => {
   text-align: center;
   height: 38rem;
   background-color: lightpink;
+  position: absolute;
+  z-index: 100;
   `
 
   const StyledTopSection = styled.div`

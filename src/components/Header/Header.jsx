@@ -23,7 +23,6 @@ const Header = (props) => {
   
   const homeClick = () => {
     props.history.push("/")
-    console.log("Home clicked")
   }
 
   const StyledSection = styled.section`
