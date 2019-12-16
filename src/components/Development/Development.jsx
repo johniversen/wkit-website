@@ -72,19 +72,19 @@ const Development = () => {
       </StyledTopSection>
       <StyledBottomSection>
         <StyledWebsiteExample>
-          Här kommer ett exempel på en hemsida ligga.
+          Här kommer ett exempel på utveckling ligga.
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          Här kommer ett exempel på en hemsida ligga.
+          Här kommer ett exempel på utveckling ligga.
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          Här kommer ett exempel på en hemsida ligga.
+          Här kommer ett exempel på utveckling ligga.
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          Här kommer ett exempel på en hemsida ligga.
+          Här kommer ett exempel på utveckling ligga.
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          Här kommer ett exempel på en hemsida ligga.
+          Här kommer ett exempel på utveckling ligga.
         </StyledWebsiteExample>
       </StyledBottomSection>
     </StyledSection>

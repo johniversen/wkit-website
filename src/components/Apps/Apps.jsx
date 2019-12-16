@@ -72,19 +72,19 @@ const Apps = () => {
       </StyledTopSection>
       <StyledBottomSection>
         <StyledWebsiteExample>
-          Här kommer ett exempel på en hemsida ligga.
+          Här kommer ett exempel på en app ligga.
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          Här kommer ett exempel på en hemsida ligga.
+          Här kommer ett exempel på en app ligga.
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          Här kommer ett exempel på en hemsida ligga.
+          Här kommer ett exempel på en app ligga.
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          Här kommer ett exempel på en hemsida ligga.
+          Här kommer ett exempel på en app ligga.
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          Här kommer ett exempel på en hemsida ligga.
+          Här kommer ett exempel på en app ligga.
         </StyledWebsiteExample>
       </StyledBottomSection>
     </StyledSection>
