@@ -3,13 +3,13 @@ import styled from 'styled-components';
 
 const Development = () => {
   const StyledSection = styled.section`
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: 38rem;
-  background-color: lightpink;
   position: absolute;
   z-index: 100;
   `
