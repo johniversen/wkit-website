@@ -9,7 +9,7 @@ const Contact = () => {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 30rem;
+  height: 35rem;
   `
   
   return (

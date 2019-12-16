@@ -31,19 +31,19 @@ const Header = (props) => {
   justify-content: space-between;
   flex-direction: row;
   height: 5rem;
-  width: 80%;
+  width: 90%;
   margin: auto;
   `
 
-const HeaderImg = styled.img.attrs({
-  src: Logo
-})`
-height: 4rem;
-cursor: pointer;
-`
+  const HeaderImg = styled.img.attrs({
+    src: Logo
+  })`
+  height: 4rem;
+  cursor: pointer;
+  `
 
-const StyledA = styled.a`
-`
+  const StyledA = styled.a`
+  `
 
   return (
     <StyledSection>
