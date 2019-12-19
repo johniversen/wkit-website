@@ -8,7 +8,6 @@ import StaffContainer from '../Staff';
 import Back from '../../assets/back.png';
 
 const Products = () => {
-
   const [toggledCard, setCurrentCard] = useState('default');
 
   const StyledSection = styled.section`
