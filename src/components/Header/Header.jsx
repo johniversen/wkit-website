@@ -30,6 +30,7 @@ const Header = (props) => {
   top: 0;
   width: 100%;
   background-color: white;
+  z-index: 102;
   `
 
   const StyledSection = styled.section`

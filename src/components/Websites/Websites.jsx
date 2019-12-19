@@ -1,5 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import Azia from '../../assets/azia.png';
+import Briggen from '../../assets/briggen.png';
+import Jjflytt from '../../assets/jjflytt.png';
+import Primetracker from '../../assets/primetracker.png';
+import Ride from '../../assets/ride.png';
+import Thailandbo from '../../assets/thailandbo.png';
+import Uniter from '../../assets/uniter.png';
+import Wcrs from '../../assets/wcrs.png';
 
 const Websites = () => {
   const StyledSection = styled.section`
@@ -25,23 +33,25 @@ const Websites = () => {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 90%;
   `
 
   const StyledWebsiteExample = styled.div`
-  padding: 2rem;
-  width: 100%;
+  padding: 0.5rem;
+  width: 16%;
   `
 
   const StyledH1 = styled.h1`
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
   `
 
   const StyledH2 = styled.h2`
   font-size: 1.4rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
   `
 
   const StyledPSection = styled.div`
@@ -59,6 +69,70 @@ const Websites = () => {
   margin-left: 2%;
   margin-top: 2%;
   `
+
+  const AziaImg = styled.img.attrs({
+    src: Azia
+  })`
+  cursor: pointer;
+  object-fit: cover;
+  max-width: 100%;
+  `
+
+  const BriggenImg = styled.img.attrs({
+    src: Briggen
+  })`
+  cursor: pointer;
+  object-fit: cover;
+  max-width: 100%;
+  `
+
+  const JjflyttImg = styled.img.attrs({
+    src: Jjflytt
+  })`
+  cursor: pointer;
+  object-fit: cover;
+  max-width: 100%;
+  `
+
+  const PrimetrackerImg = styled.img.attrs({
+    src: Primetracker
+  })`
+  cursor: pointer;
+  object-fit: cover;
+  max-width: 100%;
+  `
+
+  const RideImg = styled.img.attrs({
+    src: Ride
+  })`
+  cursor: pointer;
+  object-fit: cover;
+  max-width: 100%;
+  `
+
+  const ThailandboImg = styled.img.attrs({
+    src: Thailandbo
+  })`
+  cursor: pointer;
+  object-fit: cover;
+  max-width: 100%;
+  `
+
+  const UniterImg = styled.img.attrs({
+    src: Uniter
+  })`
+  cursor: pointer;
+  object-fit: cover;
+  max-width: 100%;
+  `
+
+  const WcrsImg = styled.img.attrs({
+    src: Wcrs
+  })`
+  cursor: pointer;
+  object-fit: cover;
+  max-width: 100%;
+  `
   
   return (
     <StyledSection>
@@ -71,22 +145,32 @@ const Websites = () => {
           <StyledP>Många av våra kunder är små företag, och vi är vana att tillgodose varje enskilt behov. På ett kostnadsfritt möte skapar vi oss en förståelse kring era utmaningar och visioner. Efter det bygger vi en unik hemsida som är anpassad efter just dina behov. Självklart gör vi detta till ett av marknadens absolut bästa pris!
           </StyledP>
         </StyledPSection>
+        <StyledH2>TIDIGARE PROJEKT</StyledH2>
       </StyledTopSection>
       <StyledBottomSection>
         <StyledWebsiteExample>
-          Här kommer ett exempel på en hemsida ligga.
+          <AziaImg onClick={ () => window.location.href = "http://aziawoksushi.se/"}/>
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          Här kommer ett exempel på en hemsida ligga.
+          <BriggenImg onClick={ () => window.location.href = "http://www.restaurang-briggen.se/"}/>
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          Här kommer ett exempel på en hemsida ligga.
+          <JjflyttImg onClick={ () => window.location.href = "https://www.jjflytt.se/"}/>
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          Här kommer ett exempel på en hemsida ligga.
+          <PrimetrackerImg onClick={ () => window.location.href = "https://primetracker.org/"}/>
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          Här kommer ett exempel på en hemsida ligga.
+          <RideImg onClick={ () => window.location.href = "https://rideexecutivesearch.se/"}/>
+        </StyledWebsiteExample>
+        <StyledWebsiteExample>
+          <ThailandboImg onClick={ () => window.location.href = "https://thailandbo.se/sv/hem/"}/>
+        </StyledWebsiteExample>
+        <StyledWebsiteExample>
+          <UniterImg onClick={ () => window.location.href = "https://uniter.se/"}/>
+        </StyledWebsiteExample>
+        <StyledWebsiteExample>
+          <WcrsImg onClick={ () => window.location.href = "https://wcrs.se/"}/>
         </StyledWebsiteExample>
       </StyledBottomSection>
     </StyledSection>
