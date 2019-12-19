@@ -22,7 +22,7 @@ const Websites = () => {
   position: absolute;
   z-index: 100;
   `
-
+  
   const StyledTopSection = styled.div`
   display: flex;
   justify-content: center;

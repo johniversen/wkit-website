@@ -21,7 +21,7 @@ const Banner = () => {
   flex-wrap: wrap;
   width: 100%;
   `
-
+  
   const StyledH1 = styled.h1`
   width: 65%;
   font-size: 3rem;
