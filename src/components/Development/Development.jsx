@@ -38,7 +38,7 @@ const Development = () => {
   padding: 1rem;
   width: 45%;
   margin: 0.5rem;
-  border-radius: 3px;
+  border-radius: 4px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   `
 
