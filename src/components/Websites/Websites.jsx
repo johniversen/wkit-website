@@ -79,6 +79,11 @@ const Websites = () => {
   max-width: 100%;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
   `
 
   const BriggenImg = styled.img.attrs({
@@ -89,6 +94,11 @@ const Websites = () => {
   max-width: 100%;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
   `
 
   const JjflyttImg = styled.img.attrs({
@@ -99,6 +109,11 @@ const Websites = () => {
   max-width: 100%;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
   `
 
   const PrimetrackerImg = styled.img.attrs({
@@ -109,6 +124,11 @@ const Websites = () => {
   max-width: 100%;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
   `
 
   const RideImg = styled.img.attrs({
@@ -119,6 +139,11 @@ const Websites = () => {
   max-width: 100%;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
   `
 
   const ThailandboImg = styled.img.attrs({
@@ -129,6 +154,11 @@ const Websites = () => {
   max-width: 100%;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
   `
 
   const UniterImg = styled.img.attrs({
@@ -139,6 +169,11 @@ const Websites = () => {
   max-width: 100%;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
   `
 
   const WcrsImg = styled.img.attrs({
@@ -149,6 +184,11 @@ const Websites = () => {
   max-width: 100%;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
   `
 
   const PlaceringsImg = styled.img.attrs({
@@ -159,6 +199,11 @@ const Websites = () => {
   max-width: 100%;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
   `
   
   return (

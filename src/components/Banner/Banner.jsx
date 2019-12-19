@@ -18,6 +18,7 @@ const Banner = () => {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  flex-wrap: wrap;
   `
 
   const StyledH1 = styled.h1`

@@ -12,30 +12,18 @@ const Products = () => {
 
   const StyledSection = styled.section`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
   text-align: center;
-  height: 40rem;
-  `
-
-  const StyledTopSection = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  width: 90%;
-  `
-
-  const StyledBottomSection = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  width: 90%;
+  height: 37rem;
+  padding: 2rem;
   `
 
   const StyledProcutContainer = styled.div`
   padding: 2rem;
-  width: 100%;
+  width: 40%;
   `
 
   const StyledH1 = styled.h1`
@@ -69,7 +57,6 @@ const Products = () => {
     {toggledCard === 'development' && <DevelopmentContainer />}
     {toggledCard === 'apps' && <AppsContainer />}
     {toggledCard === 'staff' && <StaffContainer />}
-      <StyledTopSection>
         <StyledProcutContainer>
           <StyledH1>HEMSIDOR</StyledH1>
           <StyledP>Vi hjälper er att bygga en hemsida eller uppdatera en befintlig. Vi är specialister på hemsidor för små företag men jobbar så klart också med både privatpersoner och större företag! Många hemsidor vi bygger baseras på det populära systemet WordPress, men givetvis anpassar vi hemsideutvecklingen efter era önskemål.</StyledP>
@@ -80,8 +67,6 @@ const Products = () => {
           <StyledP>Våra konsulter är skickliga programmerare inom flera olika programmeringsspråk. Efter att vi skapat oss en förståelse kring era utmaningar och visioner utvecklar vi en unik lösning anpassar efter just era behov. Vi är specialister på utveckling för små företag, men jobbar givetvis också med större företag!</StyledP>
           <ButtonContainer buttonText={"Läs mer"} buttonFunction={ () => setCurrentCard('development')}/>
         </StyledProcutContainer>
-      </StyledTopSection>
-      <StyledBottomSection>
         <StyledProcutContainer>
           <StyledH1>APPAR</StyledH1>
           <StyledP>Vi gör appar för Android, iPhone/iOS och Windows Mobile. Vi utgår från era behov och önskemål och gör en app som är skräddarsydd för er!</StyledP>
@@ -92,7 +77,6 @@ const Products = () => {
           <StyledP>På We Know IT har vi lång erfarenhet av att hjälpa företag runt om i Sverige att förverkliga sina produktvisioner. Våra konsulter har en bred teknisk kompetens som kommit väl till användning när vi exempelvis tagit fram bokningssystem för restauranger och tidrapporteringssystem för företag. Vår bredd gör att vi effektivt kan ta oss an alla möjliga sorters utvecklingsprojekt. Det är bara idéerna som sätter gränserna.</StyledP>
           <ButtonContainer buttonText={"Läs mer"} buttonFunction={ () => setCurrentCard('staff')} />
         </StyledProcutContainer>
-      </StyledBottomSection>
     </StyledSection>
     </>
   )

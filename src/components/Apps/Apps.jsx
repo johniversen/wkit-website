@@ -76,6 +76,11 @@ const Apps = () => {
   max-height: 15rem;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
   `
 
   const PursuitsImg = styled.img.attrs({
@@ -87,6 +92,11 @@ const Apps = () => {
   max-height: 15rem;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
   `
 
   const KnipImg = styled.img.attrs({
@@ -98,6 +108,11 @@ const Apps = () => {
   max-height: 15rem;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
   `
 
   const TwoDicesImg = styled.img.attrs({
@@ -109,6 +124,11 @@ const Apps = () => {
   max-height: 15rem;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
   `
 
   const EasyJacketImg = styled.img.attrs({
@@ -120,6 +140,11 @@ const Apps = () => {
   max-height: 15rem;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
   `
   
   return (
