@@ -54,6 +54,7 @@ const Staff = () => {
   const StyledH2 = styled.h2`
   font-size: 1.4rem;
   margin-bottom: 0.7rem;
+  font-weight: bold;
   `
 
   const StyledPSection = styled.div`
@@ -124,6 +125,7 @@ const Staff = () => {
           <StyledP>Många av våra kunder är små företag, och vi är vana att tillgodose varje enskilt behov. På ett kostnadsfritt möte skapar vi oss en förståelse kring era utmaningar och era visioner. Efter det utvecklar vi en unik lösning som är anpassad efter just dina behov. Självklart gör vi detta till marknadens absolut bästa pris!
           </StyledP>
         </StyledPSection>
+        <StyledH2>TIDIGARE PROJEKT</StyledH2>
       </StyledTopSection>
       <StyledBottomSection>
         <StyledStaffExample>
