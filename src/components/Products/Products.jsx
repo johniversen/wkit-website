@@ -17,7 +17,7 @@ const Products = () => {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 45rem;
+  height: 40rem;
   `
 
   const StyledTopSection = styled.div`
