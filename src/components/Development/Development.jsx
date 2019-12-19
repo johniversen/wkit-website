@@ -39,6 +39,7 @@ const Development = () => {
   width: 45%;
   margin: 0.5rem;
   border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   `
 
   const StyledH1 = styled.h1`
