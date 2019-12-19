@@ -5,6 +5,7 @@ import Logo from '../../assets/logo.png';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import { makeStyles } from '@material-ui/core/styles';
+import { COLORS } from '../../variables/colors';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -19,6 +20,7 @@ const useStyles = makeStyles(theme => ({
 
 const Footer = (props) => {
   const classes = useStyles();
+  const c = { ...COLORS };
 
   const facebookClick = () => {
     window.location.href = "https://www.facebook.com/WeKnowITswe/";
@@ -53,10 +55,12 @@ const Footer = (props) => {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  width: 100%;
   `
 
   const StyledA = styled.a`
   margin-right: 3%;
+  color: ${c.wkitBlue};
   `
 
   return (
@@ -65,8 +69,8 @@ const Footer = (props) => {
         <HeaderImg />
       </StyledA>
       <StyledASection>
-        <StyledA>support@weknowit.se</StyledA>
-        <StyledA>010 - 151 08 99</StyledA>
+        <StyledA href="mailto:support@weknowit.se">support@weknowit.se</StyledA>
+        <StyledA>010-1510899</StyledA>
         <StyledA>Vår personuppgiftspolicy</StyledA>
       </StyledASection>
       <div className={classes.root}>
