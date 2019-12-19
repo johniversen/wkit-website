@@ -5,7 +5,7 @@ const Buttons = (props) => {
   const { handleClick, buttonText } = props;
 
   return (
-      <Button onClick={handleClick} >
+      <Button variant="outlined" onClick={handleClick} >
         {buttonText}
       </Button>
   )

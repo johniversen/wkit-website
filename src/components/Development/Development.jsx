@@ -28,7 +28,7 @@ const Development = () => {
   width: 90%;
   `
 
-  const StyledWebsiteExample = styled.div`
+  const StyledDevelopmentExample = styled.div`
   padding: 2rem;
   width: 100%;
   `
@@ -73,21 +73,21 @@ const Development = () => {
         </StyledPSection>
       </StyledTopSection>
       <StyledBottomSection>
-        <StyledWebsiteExample>
+        <StyledDevelopmentExample>
           Här kommer ett exempel på utveckling ligga.
-        </StyledWebsiteExample>
-        <StyledWebsiteExample>
+        </StyledDevelopmentExample>
+        <StyledDevelopmentExample>
           Här kommer ett exempel på utveckling ligga.
-        </StyledWebsiteExample>
-        <StyledWebsiteExample>
+        </StyledDevelopmentExample>
+        <StyledDevelopmentExample>
           Här kommer ett exempel på utveckling ligga.
-        </StyledWebsiteExample>
-        <StyledWebsiteExample>
+        </StyledDevelopmentExample>
+        <StyledDevelopmentExample>
           Här kommer ett exempel på utveckling ligga.
-        </StyledWebsiteExample>
-        <StyledWebsiteExample>
+        </StyledDevelopmentExample>
+        <StyledDevelopmentExample>
           Här kommer ett exempel på utveckling ligga.
-        </StyledWebsiteExample>
+        </StyledDevelopmentExample>
       </StyledBottomSection>
     </StyledSection>
   )
