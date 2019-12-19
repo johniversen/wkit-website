@@ -62,7 +62,7 @@ const Websites = () => {
   `
 
   const StyledP = styled.p`
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.1rem;
   font-weight: lighter;
   width: 49%;
@@ -76,6 +76,8 @@ const Websites = () => {
   cursor: pointer;
   object-fit: cover;
   max-width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   `
 
   const BriggenImg = styled.img.attrs({
@@ -84,6 +86,8 @@ const Websites = () => {
   cursor: pointer;
   object-fit: cover;
   max-width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   `
 
   const JjflyttImg = styled.img.attrs({
@@ -92,6 +96,8 @@ const Websites = () => {
   cursor: pointer;
   object-fit: cover;
   max-width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   `
 
   const PrimetrackerImg = styled.img.attrs({
@@ -100,6 +106,8 @@ const Websites = () => {
   cursor: pointer;
   object-fit: cover;
   max-width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   `
 
   const RideImg = styled.img.attrs({
@@ -108,6 +116,8 @@ const Websites = () => {
   cursor: pointer;
   object-fit: cover;
   max-width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   `
 
   const ThailandboImg = styled.img.attrs({
@@ -116,6 +126,8 @@ const Websites = () => {
   cursor: pointer;
   object-fit: cover;
   max-width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   `
 
   const UniterImg = styled.img.attrs({
@@ -124,6 +136,8 @@ const Websites = () => {
   cursor: pointer;
   object-fit: cover;
   max-width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   `
 
   const WcrsImg = styled.img.attrs({
@@ -132,6 +146,8 @@ const Websites = () => {
   cursor: pointer;
   object-fit: cover;
   max-width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   `
   
   return (
