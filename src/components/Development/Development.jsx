@@ -1,5 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import Innototal from '../../assets/innototal.png';
+import Havovatten from '../../assets/havovatten.png';
+import Refundflight from '../../assets/refundflight.png';
+import Motala from '../../assets/motala.png';
+
 
 const Development = () => {
   const StyledSection = styled.section`
@@ -25,12 +30,15 @@ const Development = () => {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 90%;
   `
 
   const StyledDevelopmentExample = styled.div`
-  padding: 2rem;
-  width: 100%;
+  padding: 1rem;
+  width: 45%;
+  margin: 0.5rem;
+  border-radius: 3px;
   `
 
   const StyledH1 = styled.h1`
@@ -41,7 +49,14 @@ const Development = () => {
 
   const StyledH2 = styled.h2`
   font-size: 1.4rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  `
+
+  const StyledH3 = styled.h3`
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
   `
 
   const StyledPSection = styled.div`
@@ -52,12 +67,57 @@ const Development = () => {
   `
 
   const StyledP = styled.p`
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.1rem;
   font-weight: lighter;
   width: 49%;
   margin-left: 2%;
   margin-top: 2%;
+  `
+
+  const CompanyInfo = styled.p`
+  font-style: italic;
+  text-align: left;
+  `
+
+  const InnototalImg = styled.img.attrs({
+    src: Innototal
+  })`
+  height: 2rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  `
+
+  const HavovattenImg = styled.img.attrs({
+    src: Havovatten
+  })`
+  height: 2rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  `
+
+  const RefundflightImg = styled.img.attrs({
+    src: Refundflight
+  })`
+  height: 2rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  `
+
+  const MotalaImg = styled.img.attrs({
+    src: Motala
+  })`
+  height: 2rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  `
+
+  const ProductHeader = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.5rem;
   `
   
   return (
@@ -71,22 +131,36 @@ const Development = () => {
           <StyledP>Många av våra kunder är små företag, och vi är vana att tillgodose varje enskilt behov. På ett kostnadsfritt möte skapar vi oss en förståelse kring era utmaningar och era visioner. Efter det utvecklar vi en unik lösning som är anpassad efter just dina behov. Självklart gör vi detta till marknadens absolut bästa pris!
           </StyledP>
         </StyledPSection>
+        <StyledH2>TIDIGARE PROJEKT</StyledH2>
       </StyledTopSection>
       <StyledBottomSection>
         <StyledDevelopmentExample>
-          Här kommer ett exempel på utveckling ligga.
+          <ProductHeader>
+            <InnototalImg />
+            <StyledH3>INNOTOTAL AB</StyledH3>
+          </ProductHeader>
+          <CompanyInfo>Innototal utanför Göteborg jobbar med CNC-fräs och programmerar med G-kod. De kom till oss med förbättringsidéer.</CompanyInfo>
         </StyledDevelopmentExample>
         <StyledDevelopmentExample>
-          Här kommer ett exempel på utveckling ligga.
+          <ProductHeader>
+            <MotalaImg />
+            <StyledH3>MOTALA KOMMUN</StyledH3>
+          </ProductHeader>
+          <CompanyInfo>Motala kommun ville ha en platform för analyser av medarbetarundersökningar. Platformen skulle innehålla flertalet funktioner för bland annat att skapa skapa och skicka enkäter som administratörs samt läsa och fylla i enkäter som personal.</CompanyInfo>
         </StyledDevelopmentExample>
         <StyledDevelopmentExample>
-          Här kommer ett exempel på utveckling ligga.
+          <ProductHeader>
+            <RefundflightImg />
+            <StyledH3>REFUNDFLIGHT</StyledH3>
+          </ProductHeader>
+          <CompanyInfo>RefundFlight hjälper resenär att få ut ersättning av flygbolag vid förseningar. De hade ett behov att förbättra och optimera deras processer.</CompanyInfo>
         </StyledDevelopmentExample>
         <StyledDevelopmentExample>
-          Här kommer ett exempel på utveckling ligga.
-        </StyledDevelopmentExample>
-        <StyledDevelopmentExample>
-          Här kommer ett exempel på utveckling ligga.
+          <ProductHeader>
+            <HavovattenImg />
+            <StyledH3>HAVS- OCH VATTENMYNDIGHETEN</StyledH3>
+          </ProductHeader>
+          <CompanyInfo>Havs- och vattenmyndigheten (fd. Fiskeriverket) behövde ett system för inmatning av fiskedata till sjöss.</CompanyInfo>
         </StyledDevelopmentExample>
       </StyledBottomSection>
     </StyledSection>
