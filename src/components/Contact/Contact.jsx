@@ -13,7 +13,7 @@ const Contact = () => {
   `
   
   return (
-    <StyledSection>
+    <StyledSection id="contact">
       Här kommer vårt kontaktformulär ligga.
     </StyledSection>
   )

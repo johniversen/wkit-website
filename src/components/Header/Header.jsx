@@ -73,7 +73,7 @@ const Header = (props) => {
         <div className={classes.root}>
           <ButtonGroup size="large" aria-label="large outlined button group">
             <Button onClick={ () =>  props.history.push("/about")}>OM OSS</Button>
-            <Button>KONTAKT</Button>
+            <Button href="#contact">KONTAKT</Button>
           </ButtonGroup>
         </div>
         <div className={classes.root}>
