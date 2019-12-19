@@ -8,6 +8,7 @@ import Ride from '../../assets/ride.png';
 import Thailandbo from '../../assets/thailandbo.png';
 import Uniter from '../../assets/uniter.png';
 import Wcrs from '../../assets/wcrs.png';
+import Placeringsbanken from '../../assets/placeringsbanken.png';
 
 const Websites = () => {
   const StyledSection = styled.section`
@@ -149,6 +150,16 @@ const Websites = () => {
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   `
+
+  const PlaceringsImg = styled.img.attrs({
+    src: Placeringsbanken
+  })`
+  cursor: pointer;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  `
   
   return (
     <StyledSection>
@@ -187,6 +198,9 @@ const Websites = () => {
         </StyledWebsiteExample>
         <StyledWebsiteExample>
           <WcrsImg onClick={ () => window.location.href = "https://wcrs.se/"}/>
+        </StyledWebsiteExample>
+        <StyledWebsiteExample>
+          <PlaceringsImg onClick={ () => window.location.href = "https://placeringsbanken.se/"}/>
         </StyledWebsiteExample>
       </StyledBottomSection>
     </StyledSection>
