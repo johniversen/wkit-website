@@ -39,6 +39,7 @@ const Development = () => {
   width: 45%;
   margin: 0.5rem;
   border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   `
 
   const StyledH1 = styled.h1`
@@ -86,6 +87,8 @@ const Development = () => {
   height: 2rem;
   cursor: pointer;
   margin-right: 1rem;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
   `
 
   const HavovattenImg = styled.img.attrs({
@@ -102,6 +105,8 @@ const Development = () => {
   height: 2rem;
   cursor: pointer;
   margin-right: 1rem;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
   `
 
   const MotalaImg = styled.img.attrs({
