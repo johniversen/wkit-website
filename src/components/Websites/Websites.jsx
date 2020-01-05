@@ -18,7 +18,6 @@ const Websites = () => {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 38rem;
   position: absolute;
   z-index: 100;
   `
@@ -47,6 +46,7 @@ const Websites = () => {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.13);
   `
 
   const StyledH2 = styled.h2`
@@ -69,6 +69,7 @@ const Websites = () => {
   max-width: 49%;
   margin-left: 2%;
   margin-top: 2%;
+  text-align: left;
   `
 
   const AziaImg = styled.img.attrs({

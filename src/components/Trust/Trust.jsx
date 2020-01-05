@@ -17,7 +17,6 @@ const Trust = () => {
   align-items: flex-start;
   justify-content: center;
   text-align: center;
-  min-height: 12rem;
   width: 100%;
   `
 
@@ -29,9 +28,12 @@ const Trust = () => {
   `
 
   const StyledH1 = styled.h1`
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   font-weight: bold;
+  padding: 1%;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.13);
   `
 
   const NetlightImg = styled.img.attrs({

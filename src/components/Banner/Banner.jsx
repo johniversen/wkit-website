@@ -28,6 +28,7 @@ const Banner = () => {
   font-weight: bold;
   color: white;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.39);
+  margin-top: 5.01rem;
   `
 
   return (

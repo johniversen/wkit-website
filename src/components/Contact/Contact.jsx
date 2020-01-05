@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const Contact = () => {
   const StyledSection = styled.section`
-  background-color: lightblue;
   display: flex;
   flex-direction: column;
   align-items: center;

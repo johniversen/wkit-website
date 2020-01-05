@@ -10,24 +10,19 @@ const Policy = () => {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 26rem;
+  padding: 3%;
   `
   
   const StyledH1 = styled.h1`
-  margin-top: 6rem;
+  margin-top: 5.01rem;
   font-size: 1.4rem;
-  margin-left: 3%;
-  margin-bottom: 0.5rem;
   font-weight: bold;
   `
 
   const StyledP = styled.p`
-  margin-bottom: 2rem;
   font-size: 1.1rem;
   font-weight: lighter;
-  margin-top: 0.5%;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-top: 1%;
   `
   
   return (

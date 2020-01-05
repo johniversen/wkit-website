@@ -12,7 +12,6 @@ const Staff = () => {
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 38rem;
   position: absolute;
   z-index: 100;
   `
@@ -49,6 +48,7 @@ const Staff = () => {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.7rem;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.13);
   `
 
   const StyledH2 = styled.h2`
@@ -71,6 +71,7 @@ const Staff = () => {
   width: 49%;
   margin-left: 2%;
   margin-top: 2%;
+  text-align: left;
   `
 
   const ProductHeader = styled.div`

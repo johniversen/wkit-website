@@ -17,7 +17,6 @@ const Products = () => {
   align-items: flex-start;
   justify-content: center;
   text-align: center;
-  min-height: 37rem;
   padding: 2rem;
   `
 
@@ -30,12 +29,14 @@ const Products = () => {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0.7rem;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.13);
   `
 
   const StyledP = styled.p`
   margin-bottom: 2rem;
   font-size: 1.1rem;
   font-weight: lighter;
+  text-align: left;
   `
 
   const StyledBackButton = styled.img.attrs({
