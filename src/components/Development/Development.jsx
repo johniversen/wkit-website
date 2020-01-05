@@ -14,7 +14,7 @@ const Development = () => {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 38rem;
+  min-height: 38rem;
   position: absolute;
   z-index: 100;
   `

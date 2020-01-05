@@ -34,6 +34,12 @@ const Header = (props) => {
   
   const homeClick = () => {
     props.history.push("/")
+    window.scrollTo(0, 0)
+  }
+  
+  const aboutClick = () => {
+    props.history.push("/about")
+    window.scrollTo(0, 0)
   }
 
   const StyledSticky = styled.div`
@@ -49,7 +55,7 @@ const Header = (props) => {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  height: 5rem;
+  min-height: 5rem;
   width: 90%;
   margin: auto;
   `
@@ -72,7 +78,7 @@ const Header = (props) => {
         </StyledA>
         <div className={classes.root}>
           <ButtonGroup size="large" aria-label="large outlined button group">
-            <Button onClick={ () =>  props.history.push("/about")}>OM OSS</Button>
+            <Button onClick={aboutClick}>OM OSS</Button>
             <Button href="#contact">KONTAKT</Button>
           </ButtonGroup>
         </div>

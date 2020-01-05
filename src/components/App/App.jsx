@@ -3,6 +3,7 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import StartContainer from '../Start';
 import AboutContainer from '../About';
+import PolicyContiner from '../Policy';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={ StartContainer } />
           <Route path="/about" component={ AboutContainer } />
+          <Route path="/policy" component={ PolicyContiner } />
         </Switch>
       </div>
     </div>

@@ -13,7 +13,7 @@ const Banner = () => {
   flex-direction: column;
   text-align: center;
   background-color: ${c.wkitBlue};
-  height: 39rem;
+  min-height: 39rem;
   background-image: url(${BannerImg});
   background-position: center;
   background-size: cover;

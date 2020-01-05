@@ -17,7 +17,7 @@ const Products = () => {
   align-items: flex-start;
   justify-content: center;
   text-align: center;
-  height: 37rem;
+  min-height: 37rem;
   padding: 2rem;
   `
 

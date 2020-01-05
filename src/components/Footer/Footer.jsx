@@ -22,6 +22,11 @@ const Footer = (props) => {
   const classes = useStyles();
   const c = { ...COLORS };
 
+  const policyClick = () => {
+    props.history.push("/policy")
+    window.scrollTo(0, 0)
+  }
+
   const facebookClick = () => {
     window.location.href = "https://www.facebook.com/WeKnowITswe/";
   }
@@ -39,7 +44,7 @@ const Footer = (props) => {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  height: 5rem;
+  min-height: 5rem;
   width: 90%;
   margin: auto;
   `
@@ -61,6 +66,8 @@ const Footer = (props) => {
   const StyledA = styled.a`
   margin-right: 3%;
   color: ${c.wkitBlue};
+  cursor: pointer;
+  text-decoration: none;
   `
 
   return (
@@ -70,8 +77,8 @@ const Footer = (props) => {
       </StyledA>
       <StyledASection>
         <StyledA href="mailto:support@weknowit.se">support@weknowit.se</StyledA>
-        <StyledA>010-1510899</StyledA>
-        <StyledA>Vår personuppgiftspolicy</StyledA>
+        <StyledA href="tel:010-1510899">010-1510899</StyledA>
+        <StyledA onClick={policyClick}>Vår personuppgiftspolicy</StyledA>
       </StyledASection>
       <div className={classes.root}>
           <ButtonGroup size="large" aria-label="large outlined button group">

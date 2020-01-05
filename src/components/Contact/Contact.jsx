@@ -9,7 +9,7 @@ const Contact = () => {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 35rem;
+  min-height: 35rem;
   `
 
   const StyledH1 = styled.h1`

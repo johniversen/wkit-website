@@ -66,7 +66,7 @@ const Websites = () => {
   margin-bottom: 1rem;
   font-size: 1.1rem;
   font-weight: lighter;
-  width: 49%;
+  max-width: 49%;
   margin-left: 2%;
   margin-top: 2%;
   `

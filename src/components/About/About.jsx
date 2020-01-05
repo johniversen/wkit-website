@@ -1,6 +1,8 @@
 import React from 'react';
-import Header from '../Header';
+import HeaderContainer from '../Header';
 import styled from 'styled-components';
+import ContactContainer from '../Contact';
+import FooterContainer from '../Footer';
 
 const About = () => {
   const StyledPSection = styled.section`
@@ -26,44 +28,21 @@ const About = () => {
   justify-content: center;
   flex-direction: row;
   text-align: center;
-  height: 10rem;
+  min-height: 20rem;
   background-color: lightgreen;
   `
 
   const StyledH1 = styled.h1`
-  width: 65%;
+  max-width: 65%;
   font-size: 3rem;
   font-weight: bold;
   color: white;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.39);
   `
-
-  const StyledSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 38rem;
-  `
-
-  const StyledTopSection = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  width: 90%;
-  `
-
-  const StyledBottomSection = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  width: 90%;
-  `
   
   return (
     <>
-    <Header />
+    <HeaderContainer />
     <StyledH1Section>
       <StyledH1>VI ÄR ETT STUDENTDRIVET KONSULTBOLAG</StyledH1>
     </StyledH1Section>
@@ -75,14 +54,8 @@ const About = () => {
       En del av vår utbildning som studenter är att alltid vara uppdaterad på kommande trender och de senaste verktygen inom IT. Vi är en platt och flexibel organisation vilket gör att vi snabbt kan anpassa oss till en föränderlig omvärld. Det gör att vi alltid kan leverera moderna och kvalitativa lösningar till våra kunder.
       </StyledP>
     </StyledPSection>
-    <StyledSection>
-      <StyledTopSection>
-      
-      </StyledTopSection>
-      <StyledBottomSection>
-
-      </StyledBottomSection>
-    </StyledSection>
+    <ContactContainer />
+    <FooterContainer />
     </>
   )
 }
