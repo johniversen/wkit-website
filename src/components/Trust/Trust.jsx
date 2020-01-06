@@ -41,6 +41,7 @@ const Trust = () => {
   })`
   height: 2.5rem;
   margin-right: 1rem;
+  cursor: pointer;
   `
 
   const DatatjejImg = styled.img.attrs({
@@ -48,6 +49,7 @@ const Trust = () => {
   })`
   height: 2.5rem;
   margin-right: 1rem;
+  cursor: pointer;
   `
 
   const LeadImg = styled.img.attrs({
@@ -55,6 +57,7 @@ const Trust = () => {
   })`
   height: 2.5rem;
   margin-right: 1rem;
+  cursor: pointer;
   `
 
   const RandstadImg = styled.img.attrs({
@@ -62,6 +65,7 @@ const Trust = () => {
   })`
   height: 2.5rem;
   margin-right: 1rem;
+  cursor: pointer;
   `
 
   const KthImg = styled.img.attrs({
@@ -69,6 +73,7 @@ const Trust = () => {
   })`
   height: 3.5rem;
   margin-right: 1rem;
+  cursor: pointer;
   `
 
   const ChalmersImg = styled.img.attrs({
@@ -76,6 +81,7 @@ const Trust = () => {
   })`
   height: 3.5rem;
   margin-right: 1rem;
+  cursor: pointer;
   `
 
   const LundImg = styled.img.attrs({
@@ -83,6 +89,7 @@ const Trust = () => {
   })`
   height: 3.5rem;
   margin-right: 1rem;
+  cursor: pointer;
   `
 
   const LinkopingImg = styled.img.attrs({
@@ -90,23 +97,24 @@ const Trust = () => {
   })`
   height: 3.5rem;
   margin-right: 1rem;
+  cursor: pointer;
   `
   
   return (
     <StyledSection>
       <PartnersSection>
         <StyledH1>Våra partners</StyledH1>
-        <NetlightImg />
-        <DatatjejImg />
-        <LeadImg />
-        <RandstadImg />
+        <NetlightImg onClick={ () => window.location.href = "https://www.netlight.com/"}/>
+        <DatatjejImg onClick={ () => window.location.href = "https://datatjej.se/"}/>
+        <LeadImg onClick={ () => window.location.href = "https://lead.se/"}/>
+        <RandstadImg onClick={ () => window.location.href = "https://www.randstad.se/"}/>
       </PartnersSection>
       <UniSecton>
         <StyledH1>Vi har studenter från Sveriges bästa universitet</StyledH1>
-        <KthImg />
-        <ChalmersImg />
-        <LundImg />
-        <LinkopingImg />
+        <KthImg onClick={ () => window.location.href = "https://www.kth.se/"}/>
+        <ChalmersImg onClick={ () => window.location.href = "https://www.chalmers.se/sv/Sidor/default.aspx"}/>
+        <LundImg onClick={ () => window.location.href = "https://www.lu.se/start"}/>
+        <LinkopingImg onClick={ () => window.location.href = "https://liu.se/"}/>
       </UniSecton>
     </StyledSection>
   )

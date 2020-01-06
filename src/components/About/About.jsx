@@ -16,7 +16,7 @@ const About = () => {
   flex-direction: column;
   text-align: center;
   background-color: ${c.wkitBlue};
-  min-height: 15rem;
+  min-height: 25rem;
   background-image: url(${BannerImg});
   background-position: center;
   background-size: cover;
