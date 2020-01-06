@@ -56,7 +56,6 @@ const Development = () => {
 
   const StyledH3 = styled.h3`
   font-size: 1.1rem;
-  margin-bottom: 0.5rem;
   font-weight: bold;
   `
 
@@ -80,6 +79,7 @@ const Development = () => {
   const CompanyInfo = styled.p`
   font-style: italic;
   text-align: left;
+  margin-top: 0.5rem;
   `
 
   const InnototalImg = styled.img.attrs({
@@ -146,6 +146,7 @@ const Development = () => {
             <StyledH3>INNOTOTAL AB</StyledH3>
           </ProductHeader>
           <CompanyInfo>Innototal utanför Göteborg jobbar med CNC-fräs och programmerar med G-kod. De kom till oss med förbättringsidéer.</CompanyInfo>
+          <CompanyInfo>We Know IT skrev en applikation i Python och PyQT som sparade tid åt kund genom smart automatisering samt minskade felkällorna genom att låta datorn göra en större del av arbetet.</CompanyInfo>
         </StyledDevelopmentExample>
         <StyledDevelopmentExample>
           <ProductHeader>
@@ -153,6 +154,7 @@ const Development = () => {
             <StyledH3>MOTALA KOMMUN</StyledH3>
           </ProductHeader>
           <CompanyInfo>Motala kommun ville ha en platform för analyser av medarbetarundersökningar. Platformen skulle innehålla flertalet funktioner för bland annat att skapa skapa och skicka enkäter som administratörs samt läsa och fylla i enkäter som personal.</CompanyInfo>
+          <CompanyInfo>We Know IT utvecklade applikationen i React för front-end med Firebase i back-end.</CompanyInfo>
         </StyledDevelopmentExample>
         <StyledDevelopmentExample>
           <ProductHeader>
@@ -160,6 +162,7 @@ const Development = () => {
             <StyledH3>REFUNDFLIGHT</StyledH3>
           </ProductHeader>
           <CompanyInfo>RefundFlight hjälper resenär att få ut ersättning av flygbolag vid förseningar. De hade ett behov att förbättra och optimera deras processer.</CompanyInfo>
+          <CompanyInfo>We Know IT utvecklade ett Chrome plugin som hämtade data från RefundFlights CRM. Detta sparade tid och gjorde RefundFlights process effektivare. We Know IT byggde även en adminpanel där Chrome pluginet kunde administreras.</CompanyInfo>
         </StyledDevelopmentExample>
         <StyledDevelopmentExample>
           <ProductHeader>
@@ -167,6 +170,7 @@ const Development = () => {
             <StyledH3>HAVS- OCH VATTENMYNDIGHETEN</StyledH3>
           </ProductHeader>
           <CompanyInfo>Havs- och vattenmyndigheten (fd. Fiskeriverket) behövde ett system för inmatning av fiskedata till sjöss.</CompanyInfo>
+          <CompanyInfo>We Know IT designade och programmerade en applikation som synkroniserade med databasen på land. Vi valde även ut och beställde lämplig hårdvara för arbetsmiljön.</CompanyInfo>
         </StyledDevelopmentExample>
       </StyledBottomSection>
     </StyledSection>
