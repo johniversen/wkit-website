@@ -4,6 +4,7 @@ import Netlight from '../../assets/netlight.svg';
 import Datatjej from '../../assets/datatjej.png';
 import Randstad from '../../assets/randstad.png';
 import Lead from '../../assets/lead.png';
+import Wtmg from '../../assets/wtmg.png';
 import Kth from '../../assets/kth.png';
 import Chalmers from '../../assets/chalmers.png';
 import Lund from '../../assets/lund.svg';
@@ -67,6 +68,14 @@ const Trust = () => {
   margin-right: 1rem;
   cursor: pointer;
   `
+  
+  const WtmgImg = styled.img.attrs({
+    src: Wtmg
+  })`
+  height: 2.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  `
 
   const KthImg = styled.img.attrs({
     src: Kth
@@ -99,13 +108,14 @@ const Trust = () => {
   margin-right: 1rem;
   cursor: pointer;
   `
-  
+
   return (
     <StyledSection>
       <PartnersSection>
         <StyledH1>Våra partners</StyledH1>
         <NetlightImg onClick={ () => window.location.href = "https://www.netlight.com/"}/>
         <DatatjejImg onClick={ () => window.location.href = "https://datatjej.se/"}/>
+        <WtmgImg onClick={ () => window.location.href = "https://wtmg.se/"}/>
         <LeadImg onClick={ () => window.location.href = "https://lead.se/"}/>
         <RandstadImg onClick={ () => window.location.href = "https://www.randstad.se/"}/>
       </PartnersSection>
