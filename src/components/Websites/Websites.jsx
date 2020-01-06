@@ -70,6 +70,10 @@ const Websites = () => {
   margin-left: 2%;
   margin-top: 2%;
   text-align: left;
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
   `
 
   const AziaImg = styled.img.attrs({

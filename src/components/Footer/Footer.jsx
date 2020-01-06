@@ -53,6 +53,10 @@ const Footer = (props) => {
     src: Logo
   })`
   height: 4rem;
+
+  @media (max-width: 425px) {
+    height: 3rem;
+  }
   `
 
   const StyledASection = styled.div`

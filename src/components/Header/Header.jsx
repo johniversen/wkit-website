@@ -65,6 +65,10 @@ const Header = (props) => {
   })`
   height: 4rem;
   cursor: pointer;
+
+  @media (max-width: 425px) {
+    height: 3rem;
+  }
   `
 
   const StyledA = styled.a`

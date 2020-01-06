@@ -17,12 +17,16 @@ const Products = () => {
   align-items: flex-start;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   `
 
   const StyledProcutContainer = styled.div`
   padding: 2rem;
   width: 40%;
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
   `
 
   const StyledH1 = styled.h1`
@@ -48,6 +52,10 @@ const Products = () => {
   margin-top: 1%;
   position: absolute;
   z-index: 101;
+
+  @media (max-width: 425px) {
+    height: 3rem;
+  }
   `
   
   return (
