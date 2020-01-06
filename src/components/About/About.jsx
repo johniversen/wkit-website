@@ -76,6 +76,16 @@ const About = () => {
   font-size: 1.3rem;
   font-weight: bold;
   `
+
+  const ConsultantsContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100rem;
+  background-color: ${c.wkitBlue};
+  `
   
   return (
     <>
@@ -111,6 +121,9 @@ const About = () => {
         <InfoP>We Know ITs historia börjar redan 2006 då Johan Geterud och Aron Gilljam vann pris för bästa affärsidé i Venture Cup. 2008 bildades handelsbolaget We Know IT som snart blev aktiebolag. I begynnelsen var företaget endast aktivt i Göteborg men har sedan dess vuxit och finns i dag även i Linköping, Stockholm och Malmö/Lund. Tio år efter starten åtnjuter vi fortfarande en stark tillväxt. Att vi fortsätter ta marknadsandelar är för oss ett betyg på att vi levererar prisvärda resultat till nöjda kunder.</InfoP>
       </StyledInfoSection>
     </InfoContainer>
+    <ConsultantsContainer>
+      <StyledH1>Här kommer våra konsulter och chefer presenteras.</StyledH1>
+    </ConsultantsContainer>
     <ContactContainer />
     <FooterContainer />
     </>
