@@ -5,6 +5,8 @@ import StartContainer from '../Start';
 import AboutContainer from '../About';
 import PolicyContiner from '../Policy';
 
+// Här importeras alla komponenter. Detta är huvudkomponenten.
+
 function App() {
   return (
     <div className="App">

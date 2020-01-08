@@ -4,6 +4,8 @@ import Wtmg from '../../assets/wtmg.png';
 import Roxen from '../../assets/roxen.png';
 import Smwg from '../../assets/smwg.png';
 
+// Detta är bemanningskomponenten. Den visar information om vad vi kan göra i form av bemanning och några företag vi blivit anlitade av innan.
+
 const Staff = () => {
   const StyledSection = styled.section`
   background-color: white;

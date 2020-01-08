@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Detta är kontaktformuläret för kunder.
+
 const Contact = () => {
   const StyledSection = styled.section`
   display: flex;

@@ -6,6 +6,8 @@ import TwoDices from '../../assets/twodices.png';
 import EasyJacket from '../../assets/easyjacket.png';
 import Pursuits from '../../assets/pursuits.png';
 
+// Komponenten som innehåller information om vad för appar vi gjort tidigare samt kort information om att vi kan göra appar.
+
 const Apps = () => {
   const StyledSection = styled.section`
   background-color: white;

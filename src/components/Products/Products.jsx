@@ -7,6 +7,8 @@ import DevelopmentContainer from '../Development';
 import StaffContainer from '../Staff';
 import Back from '../../assets/back.png';
 
+// Detta är huvudkomponenten för produkter. Den innehåller information om vilka olika produkter vi erbjuder samt en knapp för varje produkttyp som visar mer information om denna.
+
 const Products = () => {
   const [toggledCard, setCurrentCard] = useState('default');
 

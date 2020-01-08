@@ -5,6 +5,7 @@ import Havovatten from '../../assets/havovatten.png';
 import Refundflight from '../../assets/refundflight.png';
 import Motala from '../../assets/motala.png';
 
+// Detta är stycket innehållande infromation om utveckling och vad vi gjort tidigare.
 
 const Development = () => {
   const StyledSection = styled.section`

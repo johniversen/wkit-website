@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { COLORS } from '../../variables/colors';
 import BannerImg from '../../assets/banner.png';
 
+// Detta är bannerkomponenten som visas högst upp under headern.
+
 const Banner = () => {
   const c = { ...COLORS };
 
