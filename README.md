@@ -1,4 +1,29 @@
-## Available Scripts
+# We Know IT 
+## Förklaring av filstruktur
+Projektet ivolverad en relativt standardiserad filstruktur som ofta förekommer i React-projekt. Alla komponenter kan finnas i mappen src/components. Varje komponent har där en egen mappen innehållande två filer. För att göra ändringar i utseende och innehåll görs detta i den fil som heter samma sak som komponenten. T.ex. för Contact görs ändringar i src/components/Contact/Contact.jsx, och inte i index.tsx i samma mapp.
+
+Styling av projektet görs med biblioteket styled-components. Detta möjliggör skapandet av egna element som stylas på en gång för att sedan exporteras. I samma fil som tidigare, src/components/Contact/Contact.jsx, kan jag ta ett exempel.
+
+```
+const StyledH2 = styled.h2`
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  width: 70%;
+  `
+```
+Detta skapar en <h2>-tagg som är stylad utan att behöva specificera styling i en css-fil. Denna kan sedan användas på följande sätt.
+
+```
+return (
+    <StyledSection id="contact">
+      <StyledH1>KONTAKTA OSS</StyledH1>
+      <StyledH2>KONTAKTA OSS GÄRNA OM NI HAR NÅGRA FUNDERINGAR, TANKAR ELLER IDÉER SOM NI BEHÖVER HJÄLP ATT REALISERA</StyledH2>
+    </StyledSection>
+  )
+```
+
+## To run
 
 In the project directory, you can run:
 
