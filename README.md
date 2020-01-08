@@ -23,6 +23,8 @@ return (
   )
 ```
 
+#### För förklaring av hur sidan körs, se nedan.
+
 ## To run
 
 In the project directory, you can run:
