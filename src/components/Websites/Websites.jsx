@@ -75,12 +75,12 @@ const Websites = () => {
   margin-bottom: 2rem;
   font-size: 1.1rem;
   font-weight: lighter;
-  width: 49%;
+  width: 45%;
   margin-left: 2%;
   margin-top: 2%;
   text-align: left;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     width: 100%;
   }
   `
