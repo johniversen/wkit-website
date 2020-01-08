@@ -53,7 +53,7 @@ const Products = () => {
   position: absolute;
   z-index: 101;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     height: 3rem;
   }
   `

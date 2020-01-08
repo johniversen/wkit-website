@@ -25,6 +25,7 @@ const Staff = () => {
 
   const StyledBottomSection = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
   width: 90%;
@@ -42,6 +43,10 @@ const Staff = () => {
   margin: 0.5rem;
   border-radius: 4px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
   `
 
   const StyledH1 = styled.h1`
@@ -60,6 +65,7 @@ const Staff = () => {
   const StyledPSection = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   `
@@ -72,6 +78,10 @@ const Staff = () => {
   margin-left: 2%;
   margin-top: 2%;
   text-align: left;
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
   `
 
   const ProductHeader = styled.div`

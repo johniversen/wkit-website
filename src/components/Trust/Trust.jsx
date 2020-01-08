@@ -43,6 +43,10 @@ const Trust = () => {
   height: 2.5rem;
   margin-right: 1rem;
   cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin: 1%;
+  padding: 1%;
   `
 
   const DatatjejImg = styled.img.attrs({
@@ -51,6 +55,10 @@ const Trust = () => {
   height: 2.5rem;
   margin-right: 1rem;
   cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin: 1%;
+  padding: 1%;
   `
 
   const LeadImg = styled.img.attrs({
@@ -59,6 +67,10 @@ const Trust = () => {
   height: 2.5rem;
   margin-right: 1rem;
   cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin: 1%;
+  padding: 1%;
   `
 
   const RandstadImg = styled.img.attrs({
@@ -67,6 +79,10 @@ const Trust = () => {
   height: 2.5rem;
   margin-right: 1rem;
   cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin: 1%;
+  padding: 1%;
   `
   
   const WtmgImg = styled.img.attrs({
@@ -75,6 +91,10 @@ const Trust = () => {
   height: 2.5rem;
   margin-right: 1rem;
   cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin: 1%;
+  padding: 1%;
   `
 
   const KthImg = styled.img.attrs({
@@ -83,6 +103,10 @@ const Trust = () => {
   height: 3.5rem;
   margin-right: 1rem;
   cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin: 1%;
+  padding: 1%;
   `
 
   const ChalmersImg = styled.img.attrs({
@@ -91,6 +115,10 @@ const Trust = () => {
   height: 3.5rem;
   margin-right: 1rem;
   cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin: 1%;
+  padding: 1%;
   `
 
   const LundImg = styled.img.attrs({
@@ -99,6 +127,10 @@ const Trust = () => {
   height: 3.5rem;
   margin-right: 1rem;
   cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin: 1%;
+  padding: 1%;
   `
 
   const LinkopingImg = styled.img.attrs({
@@ -107,6 +139,10 @@ const Trust = () => {
   height: 3.5rem;
   margin-right: 1rem;
   cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin: 1%;
+  padding: 1%;
   `
 
   return (

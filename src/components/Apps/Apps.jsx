@@ -36,6 +36,14 @@ const Apps = () => {
   const StyledAppExample = styled.div`
   padding: 0.5rem;
   width: 15%;
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    width: 30%;
+  }
   `
 
   const StyledH1 = styled.h1`
@@ -56,6 +64,7 @@ const Apps = () => {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   `
 
   const StyledP = styled.p`
@@ -66,6 +75,10 @@ const Apps = () => {
   margin-left: 2%;
   margin-top: 2%;
   text-align: left;
+  
+  @media (max-width: 425px) {
+    width: 100%;
+  }
   `
 
   const CentralYouImg = styled.img.attrs({

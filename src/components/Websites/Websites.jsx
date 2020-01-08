@@ -40,6 +40,14 @@ const Websites = () => {
   const StyledWebsiteExample = styled.div`
   padding: 0.5rem;
   width: 16%;
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    width: 45%;
+  }
   `
 
   const StyledH1 = styled.h1`
@@ -58,15 +66,16 @@ const Websites = () => {
   const StyledPSection = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   `
 
   const StyledP = styled.p`
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 1.1rem;
   font-weight: lighter;
-  max-width: 49%;
+  width: 49%;
   margin-left: 2%;
   margin-top: 2%;
   text-align: left;

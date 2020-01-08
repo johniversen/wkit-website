@@ -68,6 +68,7 @@ const Development = () => {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   `
 
   const StyledP = styled.p`
@@ -79,7 +80,7 @@ const Development = () => {
   margin-top: 2%;
   text-align: left;
   
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     width: 100%;
   }
   `
