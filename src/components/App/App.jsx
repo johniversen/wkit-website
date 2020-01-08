@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import StartContainer from '../Start';
 import AboutContainer from '../About';
 import PolicyContiner from '../Policy';
+import CareerContainer from '../Career';
 
 // Här importeras alla komponenter. Detta är huvudkomponenten.
 
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/" component={ StartContainer } />
           <Route path="/about" component={ AboutContainer } />
           <Route path="/policy" component={ PolicyContiner } />
+          <Route path="/career" component={ CareerContainer } />
         </Switch>
       </div>
     </div>

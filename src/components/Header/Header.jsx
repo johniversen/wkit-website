@@ -44,6 +44,11 @@ const Header = (props) => {
     window.scrollTo(0, 0)
   }
 
+  const careerClick = () => {
+    props.history.push("/career")
+    window.scrollTo(0, 0)
+  }
+
   const StyledSticky = styled.div`
   position: fixed;
   top: 0;
@@ -86,6 +91,7 @@ const Header = (props) => {
           <ButtonGroup size="large" aria-label="large outlined button group">
             <Button onClick={aboutClick}>OM OSS</Button>
             <Button href="#contact">KONTAKT</Button>
+            <Button onClick={careerClick}>KARRIÄR</Button>
           </ButtonGroup>
         </div>
         <div className={classes.root}>
