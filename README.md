@@ -12,7 +12,7 @@ const StyledH2 = styled.h2`
   width: 70%;
   `
 ```
-Detta skapar en <h2>-tagg som är stylad utan att behöva specificera styling i en css-fil. Denna kan sedan användas på följande sätt.
+Detta skapar en h2-tagg som är stylad utan att behöva specificera styling i en css-fil. Denna kan sedan användas på följande sätt.
 
 ```
 return (
