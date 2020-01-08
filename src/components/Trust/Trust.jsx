@@ -10,6 +10,8 @@ import Chalmers from '../../assets/chalmers.png';
 import Lund from '../../assets/lund.svg';
 import Linkoping from '../../assets/linköping.png';
 
+// Detta är komponenten innehållande vårt trust. Ger information om våra partners samt några universtit våra konsulter är ifrån.
+
 const Trust = () => {
   const StyledSection = styled.section`
   display: flex;

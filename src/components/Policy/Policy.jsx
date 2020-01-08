@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Contact from '../Contact';
 import FooterContainer from '../Footer';
 
+// Detta är vår personuppgiftspolicysida.
+
 const Policy = () => {
   const StyledSection = styled.section`
   background-color: white;

@@ -10,6 +10,8 @@ import Uniter from '../../assets/uniter.png';
 import Wcrs from '../../assets/wcrs.png';
 import Placeringsbanken from '../../assets/placeringsbanken.png';
 
+// Denna komponent innehåller information vad vi kan göra vad gäller hemsidor, samt länkar till någar tidigare projekt vi utvecklat. 
+
 const Websites = () => {
   const StyledSection = styled.section`
   background-color: white;

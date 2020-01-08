@@ -7,6 +7,8 @@ import ButtonGroup from '@material-ui/core/ButtonGroup';
 import { makeStyles } from '@material-ui/core/styles';
 import { COLORS } from '../../variables/colors';
 
+// Detta är footern.
+
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',

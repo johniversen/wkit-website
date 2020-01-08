@@ -6,6 +6,8 @@ import FooterContainer from '../Footer';
 import { COLORS } from '../../variables/colors';
 import BannerImg from '../../assets/banner.png';
 
+// Detta är "om oss-sidan". Den importerar header och footer för att återanvändas.
+
 const About = () => {
   const c = { ...COLORS };
 
