@@ -24,10 +24,12 @@ const Header = (props) => {
 
   const facebookClick = () => {
     window.location.href = "https://www.facebook.com/WeKnowITswe/";
+    console.log("fb");
   }
 
   const instagramClick = () => {
     window.location.href = "https://www.instagram.com/weknowitswe/";
+    console.log("insta");
   }
 
   const linkedinClick = () => {
