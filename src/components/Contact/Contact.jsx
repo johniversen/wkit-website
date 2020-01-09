@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import emailjs from 'emailjs-com';
-import Button from '@material-ui/core/Button';
+import { config } from '../../emailSetup.js';
 
 // Detta är kontaktformuläret för kunder.
 
@@ -9,21 +9,22 @@ export default function Contact() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('j_iversen94_gmail_com', 'contact_form', e.target, 'user_FapPIZissNNXuDSwzRrFb')
+    emailjs.sendForm(config.serviceID, config.templateID, e.target, config.userID)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
   }
-  
+
   const StyledSection = styled.section`
-  margin-top: 4rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
   `
 
   const StyledH1 = styled.h1`
@@ -56,11 +57,7 @@ export default function Contact() {
     min-height: 20px;
     padding: 0px 2px 1px;
   }
-  `;
-
-  const StyledInput = styled.input`
-  
-  `;
+  `
 
   return (
     <>
@@ -68,9 +65,9 @@ export default function Contact() {
       <StyledH1>KONTAKTA OSS</StyledH1>
       <StyledH2>KONTAKTA OSS GÄRNA OM NI HAR NÅGRA FUNDERINGAR, TANKAR ELLER IDÉER SOM NI BEHÖVER HJÄLP ATT REALISERA</StyledH2>
       <form className="contact-form" onSubmit={sendEmail}>
-        <StyledInput type="hidden" name="contact_number" />
+        <input type="hidden" name="contact_number" />
         <label>Namn</label>
-        <StyledInput type="text" name="user_name" />
+        <input type="text" name="user_name" />
         <Select name="typeOfPerson">
           <option value="" hidden>
             Företag/Privatperson
@@ -126,7 +123,7 @@ export default function Contact() {
         </Select>
         <label>Meddelande</label>
         <textarea name="message" />
-        <Button variant="outlined" onClick={sendEmail}>SKICKA</Button>
+        <input type="submit" value="Send" />
       </form>
     </StyledSection>
     </>
