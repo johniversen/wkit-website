@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Header';
 import styled from 'styled-components';
-import Contact from '../Contact';
+import Contact from '../ContactClient';
 import FooterContainer from '../Footer';
 
 // Detta är vår personuppgiftspolicysida.
@@ -23,7 +23,7 @@ const Policy = () => {
 
   const StyledP = styled.p`
   font-size: 1.1rem;
-  font-weight: lighter;
+  
   margin-top: 1%;
   `
   

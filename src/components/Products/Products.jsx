@@ -14,17 +14,22 @@ const Products = () => {
 
   const StyledSection = styled.section`
   display: flex;
+  width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
   text-align: center;
   padding: 1rem;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
   `
 
   const StyledProcutContainer = styled.div`
   padding: 2rem;
-  width: 40%;
+  margin: 1rem;
+  width: 30%;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 
   @media (max-width: 425px) {
     width: 100%;
@@ -32,16 +37,17 @@ const Products = () => {
   `
 
   const StyledH1 = styled.h1`
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.7rem;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.13);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  color: #64c9ce;
+  padding: 0.6rem;
   `
 
   const StyledP = styled.p`
   margin-bottom: 2rem;
   font-size: 1.1rem;
-  font-weight: lighter;
   text-align: left;
   `
 

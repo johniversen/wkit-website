@@ -76,7 +76,7 @@ const Websites = () => {
   const StyledP = styled.p`
   margin-bottom: 2rem;
   font-size: 1.1rem;
-  font-weight: lighter;
+  
   width: 45%;
   margin-left: 2%;
   margin-top: 2%;

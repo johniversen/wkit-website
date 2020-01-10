@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderContainer from '../Header';
 import styled from 'styled-components';
-import ContactContainer from '../Contact';
+import ContactContainer from '../ContactClient';
 import FooterContainer from '../Footer';
 import { COLORS } from '../../variables/colors';
 import BannerImg from '../../assets/banner.png';
@@ -48,7 +48,7 @@ const Career = () => {
   max-height: 80%;
   max-width: 40%;
   font-size: 1.2rem;
-  font-weight: lighter;
+  
   `
 
   const InfoContainer = styled.section`
@@ -70,7 +70,7 @@ const Career = () => {
 
   const InfoP = styled.p`
   font-size: 1.1rem;
-  font-weight: lighter;
+  
   padding: 2%;
   `
   

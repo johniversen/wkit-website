@@ -43,5 +43,6 @@ table {
 /* My css */
 body {
   font-family: 'Nunito', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  width: 100%;
 }

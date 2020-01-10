@@ -57,6 +57,7 @@ const Header = (props) => {
   width: 100%;
   background-color: white;
   z-index: 102;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
   `
 
   const StyledSection = styled.section`
