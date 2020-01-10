@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import emailjs from 'emailjs-com';
-import { config } from '../../emailSetupClient.js';
+import { config } from '../../emailSetupCareer.js';
 import { COLORS } from '../../variables/colors';
 
 // Detta är kontaktformuläret för kunder.
 
-export default function ContactClient() {
+export default function ContactCareer() {
   const c = { ...COLORS };
 
   function sendEmail(e) {
@@ -15,7 +15,7 @@ export default function ContactClient() {
     emailjs.sendForm(config.serviceID, config.templateID, e.target, config.userID)
       .then((result) => {
           console.log(result.text);
-          alert("Förfrågan skickad!");
+          alert("Ansökan skickad!");
       }, (error) => {
           console.log(error.text);
       });
@@ -135,19 +135,21 @@ export default function ContactClient() {
   return (
     <>
     <StyledSection id="contact">
-      <StyledH1>KONTAKTA OSS</StyledH1>
-      <StyledH2>KONTAKTA OSS GÄRNA OM NI HAR NÅGRA FUNDERINGAR, TANKAR ELLER IDÉER SOM NI BEHÖVER HJÄLP ATT REALISERA</StyledH2>
+      <StyledH1>ANSÖK NU!</StyledH1>
+      <StyledH2>FYLL I FORMULÄRET NEDAN, SKRIV EN KORT PRESENTATION OCH LADDA UPP DITT CV!</StyledH2>
       <StyledForm className="contact-form" onSubmit={sendEmail}>
         <StyledInput type="text" name="user_name" placeholder="Namn" required />
-        <Select name="typeOfPerson" required>
-          <option value="" hidden>
-            Företag/Privatperson
-          </option>
-          <option value="Företag">Företag</option>
-          <option value="Privatperson">Privatperson</option>
-        </Select>
+        <StyledInput type="text" name="education" placeholder="Utbildning" required />
         <StyledInput type="email" name="user_email" placeholder="Email" required />
-        <StyledInput type="phone" name="user_phone" placeholder="Telefon" required />
+        <StyledInput type="phone" name="user_phone" placeholder="Telefon (frivilligt)" />
+        <Select name="post" required>
+          <option value="" hidden>
+            Tjänst
+          </option>
+          <option value="Apputvecklare">Apputvecklare</option>
+          <option value="Webbutvecklare">Webbutvecklare</option>
+          <option value="Annan">Annan</option>
+        </Select>
         <Select name="region" required>
           <option value="" hidden>
             Region
@@ -158,15 +160,8 @@ export default function ContactClient() {
           <option value="Malmö / Lund">Malmö / Lund</option>
           <option value="Annan ort">Annan ort</option>
         </Select>
-        <Select name="subject" required>
-          <option value="" hidden>
-            Ämne
-          </option>
-          <option value="Hemsida">Hemsida</option>
-          <option value="Mobilapplikation">Mobilapplikation</option>
-          <option value="Utveckling">Utveckling</option>
-          <option value="Underkonsult">Underkonsult</option>
-        </Select>
+        <StyledInput type="text" name="github" placeholder="Länk till din GitHub (frivilligt)" />
+        <StyledInput type="text" name="graduation" placeholder="Planerad examen" />
         <Select name="found" required>
           <option value="" hidden>
             Hur hittade du We Know IT?
@@ -178,20 +173,8 @@ export default function ContactClient() {
           <option value="Jag är en tidigare kund">Jag är en tidigare kund</option>
           <option value="På annat vis">På annat vis</option>
         </Select>
-        <Select name="budget" required>
-          <option value="" hidden>
-            Vad har du för budget?
-          </option>
-          <option value="0 - 10 000 kr">0 - 10 000 kr</option>
-          <option value="10 000 - 25 000 kr">10 000 - 25 000 kr</option>
-          <option value="25 000 - 50 000 kr">25 000 - 50 000 kr</option>
-          <option value="50 000 - 100 000 kr">50 000 - 100 000 kr</option>
-          <option value="100 000 - 200 000 kr">100 000 - 200 000 kr</option>
-          <option value="200 000 kr +">200 000 kr +</option>
-          <option value="Jag vill inte specificera budget">Jag vill inte specificera budget</option>
-        </Select>
         <Breaker />
-        <StyledTextArea name="message" placeholder="Meddelande" />
+        <StyledTextArea name="message" placeholder="Personligt brev (frivilligt)" />
         <Breaker />
         <Submit type="submit" value="Send" />
       </StyledForm>

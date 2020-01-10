@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderContainer from '../Header';
 import styled from 'styled-components';
-import ContactContainer from '../ContactClient';
+import ContactCareerContainer from '../ContactCareer';
 import FooterContainer from '../Footer';
 import { COLORS } from '../../variables/colors';
 import BannerImg from '../../assets/banner.png';
@@ -113,7 +113,7 @@ const Career = () => {
         <InfoP>Vi vet att du som student besitter mycket viktig och relevant kunskap. Hos oss får du hjälp att använda din kunskap på bästa sätt – oavsett om du bygger en hemsida eller gör en app – samtidigt som vi ser till att du hela tiden utvecklas. Viktig arbetslivserfarenhet för framtiden får du av bara farten!</InfoP>
       </StyledInfoSection>
     </InfoContainer>
-    <ContactContainer />
+    <ContactCareerContainer />
     <FooterContainer />
     </>
   )
