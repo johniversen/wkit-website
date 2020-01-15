@@ -66,8 +66,8 @@ const Header = (props) => {
   justify-content: space-between;
   flex-direction: row;
   min-height: 5rem;
-  width: 90%;
-  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
   `
 
   const HeaderImg = styled.img.attrs({

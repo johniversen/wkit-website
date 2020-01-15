@@ -20,7 +20,6 @@ const Products = () => {
   align-items: flex-start;
   justify-content: center;
   text-align: center;
-  padding: 1rem;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
   `
 

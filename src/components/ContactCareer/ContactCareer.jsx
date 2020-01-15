@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import emailjs from 'emailjs-com';
 import { config } from '../../emailSetupCareer.js';
 import { COLORS } from '../../variables/colors';
+import './ContactCareerStyles.css';
 
 // Detta är kontaktformuläret för kunder.
 
@@ -19,17 +20,20 @@ export default function ContactCareer() {
       }, (error) => {
           console.log(error.text);
       });
+
+    e.target.reset();
   }
 
   const StyledSection = styled.section`
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   text-align: center;
-  flex-wrap: wrap;
   width: 100%;
-  margin-top: 4rem;
+  padding: 1rem;
+  margin-top: 2rem;
   `
 
   const StyledH1 = styled.h1`
@@ -47,7 +51,7 @@ export default function ContactCareer() {
   `
 
   const Select = styled.select`
-  width: 20%;
+  width: 86%;
   font-size: 1.1rem;
   padding: 0.5rem;
   margin: 0.5rem;
@@ -55,10 +59,6 @@ export default function ContactCareer() {
   border-radius: 3px;
   font-family: inherit;
   color: gray;
-  -ms-box-sizing:content-box;
-  -moz-box-sizing:content-box;
-  -webkit-box-sizing:content-box; 
-  box-sizing:content-box;
   
   option {
     color: black;
@@ -72,18 +72,23 @@ export default function ContactCareer() {
   `
 
   const StyledForm = styled.form`
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-areas:
+  "name education message message"
+  "email phone message message"
+  "post region found found"
+  "github graduation send send";
+  justify-items: center;
   margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  text-align: center;
+  text-align: left;
   flex-wrap: wrap;
   width: 70%;
   `
   
   const StyledTextArea = styled.textarea`
-  width: 45%;
+  width: 80%;
   font-size: 1.1rem;
   padding: 0.5rem;
   margin: 0.5rem;
@@ -97,9 +102,9 @@ export default function ContactCareer() {
   `
 
   const StyledInput = styled.input`
-  width: 20%;
+  width: 80%;
   font-size: 1.1rem;
-  padding: 0.5rem;
+  padding: 0.3rem;
   margin: 0.5rem;
   border: 1px solid black;
   border-radius: 3px;
@@ -109,18 +114,14 @@ export default function ContactCareer() {
     color: gray;
   }
   `
-  
-  const Breaker = styled.div`
-  flex-basis: 100%;
-  height: 0;
-  `
 
   const Submit = styled.input.attrs({ 
     type: 'submit',
     value: 'SKICKA'
   })`
-  width: 15%;
+  width: 50%;
   font-size: 1.1rem;
+  line-height: 1.1rem;
   padding: 0.5rem;
   margin: 0.5rem;
   border: 1px solid black;
@@ -136,13 +137,13 @@ export default function ContactCareer() {
     <>
     <StyledSection id="contact">
       <StyledH1>ANSÖK NU!</StyledH1>
-      <StyledH2>FYLL I FORMULÄRET NEDAN, SKRIV EN KORT PRESENTATION OCH LADDA UPP DITT CV!</StyledH2>
+      <StyledH2>FYLL I FORMULÄRET NEDAN OCH SKRIV EN KORT PRESENTATION!</StyledH2>
       <StyledForm className="contact-form" onSubmit={sendEmail}>
-        <StyledInput type="text" name="user_name" placeholder="Namn" required />
-        <StyledInput type="text" name="education" placeholder="Utbildning" required />
-        <StyledInput type="email" name="user_email" placeholder="Email" required />
-        <StyledInput type="phone" name="user_phone" placeholder="Telefon (frivilligt)" />
-        <Select name="post" required>
+        <StyledInput id="name" type="text" name="user_name" placeholder="Namn" required />
+        <StyledInput id="education" type="text" name="education" placeholder="Utbildning" required />
+        <StyledInput id="email" type="email" name="user_email" placeholder="Email" required />
+        <StyledInput id="phone" type="phone" name="user_phone" placeholder="Telefon (frivilligt)" />
+        <Select id="post" name="post" required>
           <option value="" hidden>
             Tjänst
           </option>
@@ -150,7 +151,7 @@ export default function ContactCareer() {
           <option value="Webbutvecklare">Webbutvecklare</option>
           <option value="Annan">Annan</option>
         </Select>
-        <Select name="region" required>
+        <Select id="region" name="region" required>
           <option value="" hidden>
             Region
           </option>
@@ -160,9 +161,9 @@ export default function ContactCareer() {
           <option value="Malmö / Lund">Malmö / Lund</option>
           <option value="Annan ort">Annan ort</option>
         </Select>
-        <StyledInput type="text" name="github" placeholder="Länk till din GitHub (frivilligt)" />
-        <StyledInput type="text" name="graduation" placeholder="Planerad examen" />
-        <Select name="found" required>
+        <StyledInput id="github" type="text" name="github" placeholder="Länk till din GitHub (frivilligt)" />
+        <StyledInput id="graduation" type="text" name="graduation" placeholder="Planerad examen" />
+        <Select id="found" name="found" required>
           <option value="" hidden>
             Hur hittade du We Know IT?
           </option>
@@ -173,10 +174,8 @@ export default function ContactCareer() {
           <option value="Jag är en tidigare kund">Jag är en tidigare kund</option>
           <option value="På annat vis">På annat vis</option>
         </Select>
-        <Breaker />
-        <StyledTextArea name="message" placeholder="Personligt brev (frivilligt)" />
-        <Breaker />
-        <Submit type="submit" value="Send" />
+        <StyledTextArea id="message" name="message" placeholder="Personligt brev (frivilligt)" />
+        <Submit id="send" type="submit" value="Send" />
       </StyledForm>
     </StyledSection>
     </>

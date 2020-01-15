@@ -16,6 +16,7 @@ const Development = () => {
   justify-content: center;
   text-align: center;
   position: absolute;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
   z-index: 100;
   `
 

@@ -1,0 +1,43 @@
+#name {
+  grid-area: name;
+}
+
+#education {
+  grid-area: education;
+}
+
+#email {
+  grid-area: email;
+}
+
+#phone {
+  grid-area: phone;
+}
+
+#post {
+  grid-area: post;
+}
+
+#region {
+  grid-area: region;
+}
+
+#found {
+  grid-area: found;
+}
+
+#github {
+  grid-area: github;
+}
+
+#message {
+  grid-area: message;
+}
+
+#send {
+  grid-area: send;
+}
+
+#found {
+  grid-area: found;
+}

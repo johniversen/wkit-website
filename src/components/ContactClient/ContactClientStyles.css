@@ -1,0 +1,39 @@
+#name {
+  grid-area: name;
+}
+
+#typeOfPerson {
+  grid-area: typeOfPerson;
+}
+
+#email {
+  grid-area: email;
+}
+
+#phone {
+  grid-area: phone;
+}
+
+#region {
+  grid-area: region;
+}
+
+#subject {
+  grid-area: subject;
+}
+
+#found {
+  grid-area: found;
+}
+
+#budget {
+  grid-area: budget;
+}
+
+#message {
+  grid-area: message;
+}
+
+#send {
+  grid-area: send;
+}

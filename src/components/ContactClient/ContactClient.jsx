@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import emailjs from 'emailjs-com';
 import { config } from '../../emailSetupClient.js';
 import { COLORS } from '../../variables/colors';
+import './ContactClientStyles.css';
 
 // Detta är kontaktformuläret för kunder.
 
@@ -19,17 +20,20 @@ export default function ContactClient() {
       }, (error) => {
           console.log(error.text);
       });
+
+    e.target.reset();
   }
 
   const StyledSection = styled.section`
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   text-align: center;
-  flex-wrap: wrap;
   width: 100%;
-  margin-top: 4rem;
+  padding: 1rem;
+  margin-top: 2rem;
   `
 
   const StyledH1 = styled.h1`
@@ -47,7 +51,7 @@ export default function ContactClient() {
   `
 
   const Select = styled.select`
-  width: 20%;
+  width: 86%;
   font-size: 1.1rem;
   padding: 0.5rem;
   margin: 0.5rem;
@@ -55,10 +59,6 @@ export default function ContactClient() {
   border-radius: 3px;
   font-family: inherit;
   color: gray;
-  -ms-box-sizing:content-box;
-  -moz-box-sizing:content-box;
-  -webkit-box-sizing:content-box; 
-  box-sizing:content-box;
   
   option {
     color: black;
@@ -72,18 +72,23 @@ export default function ContactClient() {
   `
 
   const StyledForm = styled.form`
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-areas:
+  "name typeOfPerson message message"
+  "email phone message message"
+  "region subject send send"
+  "found budget . .";
+  justify-items: center;
   margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  text-align: center;
+  text-align: left;
   flex-wrap: wrap;
   width: 70%;
   `
   
   const StyledTextArea = styled.textarea`
-  width: 45%;
+  width: 80%;
   font-size: 1.1rem;
   padding: 0.5rem;
   margin: 0.5rem;
@@ -97,9 +102,9 @@ export default function ContactClient() {
   `
 
   const StyledInput = styled.input`
-  width: 20%;
+  width: 80%;
   font-size: 1.1rem;
-  padding: 0.5rem;
+  padding: 0.3rem;
   margin: 0.5rem;
   border: 1px solid black;
   border-radius: 3px;
@@ -109,18 +114,14 @@ export default function ContactClient() {
     color: gray;
   }
   `
-  
-  const Breaker = styled.div`
-  flex-basis: 100%;
-  height: 0;
-  `
 
   const Submit = styled.input.attrs({ 
     type: 'submit',
     value: 'SKICKA'
   })`
-  width: 15%;
+  width: 50%;
   font-size: 1.1rem;
+  line-height: 1.1rem;
   padding: 0.5rem;
   margin: 0.5rem;
   border: 1px solid black;
@@ -138,17 +139,17 @@ export default function ContactClient() {
       <StyledH1>KONTAKTA OSS</StyledH1>
       <StyledH2>KONTAKTA OSS GÄRNA OM NI HAR NÅGRA FUNDERINGAR, TANKAR ELLER IDÉER SOM NI BEHÖVER HJÄLP ATT REALISERA</StyledH2>
       <StyledForm className="contact-form" onSubmit={sendEmail}>
-        <StyledInput type="text" name="user_name" placeholder="Namn" required />
-        <Select name="typeOfPerson" required>
+        <StyledInput id="user_name" type="text" name="user_name" placeholder="Namn" required />
+        <Select id="typeOfPerson" name="typeOfPerson" required>
           <option value="" hidden>
             Företag/Privatperson
           </option>
           <option value="Företag">Företag</option>
           <option value="Privatperson">Privatperson</option>
         </Select>
-        <StyledInput type="email" name="user_email" placeholder="Email" required />
-        <StyledInput type="phone" name="user_phone" placeholder="Telefon" required />
-        <Select name="region" required>
+        <StyledInput id="email" type="email" name="user_email" placeholder="Email" required />
+        <StyledInput id="phone" type="phone" name="user_phone" placeholder="Telefon" required />
+        <Select id="region" name="region" required>
           <option value="" hidden>
             Region
           </option>
@@ -158,7 +159,7 @@ export default function ContactClient() {
           <option value="Malmö / Lund">Malmö / Lund</option>
           <option value="Annan ort">Annan ort</option>
         </Select>
-        <Select name="subject" required>
+        <Select id="subject" name="subject" required>
           <option value="" hidden>
             Ämne
           </option>
@@ -167,7 +168,7 @@ export default function ContactClient() {
           <option value="Utveckling">Utveckling</option>
           <option value="Underkonsult">Underkonsult</option>
         </Select>
-        <Select name="found" required>
+        <Select id="found" name="found" required>
           <option value="" hidden>
             Hur hittade du We Know IT?
           </option>
@@ -178,7 +179,7 @@ export default function ContactClient() {
           <option value="Jag är en tidigare kund">Jag är en tidigare kund</option>
           <option value="På annat vis">På annat vis</option>
         </Select>
-        <Select name="budget" required>
+        <Select id="budget" name="budget" required>
           <option value="" hidden>
             Vad har du för budget?
           </option>
@@ -190,10 +191,8 @@ export default function ContactClient() {
           <option value="200 000 kr +">200 000 kr +</option>
           <option value="Jag vill inte specificera budget">Jag vill inte specificera budget</option>
         </Select>
-        <Breaker />
-        <StyledTextArea name="message" placeholder="Meddelande" />
-        <Breaker />
-        <Submit type="submit" value="Send" />
+        <StyledTextArea id="message" name="message" placeholder="Meddelande" />
+        <Submit id="send" type="submit" value="Send" />
       </StyledForm>
     </StyledSection>
     </>

@@ -21,7 +21,9 @@ const Websites = () => {
   justify-content: center;
   text-align: center;
   position: absolute;
+  width: 100%;
   z-index: 100;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
   `
   
   const StyledTopSection = styled.div`

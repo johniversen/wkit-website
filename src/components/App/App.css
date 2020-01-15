@@ -45,4 +45,8 @@ body {
   font-family: 'Nunito', sans-serif;
   letter-spacing: 1.5px;
   width: 100%;
+  -ms-box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box; 
+  box-sizing:content-box;
 }
