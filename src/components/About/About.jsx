@@ -25,6 +25,7 @@ const About = () => {
   background-repeat: no-repeat;
   flex-wrap: wrap;
   width: 100%;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
   `
   
   const StyledH1 = styled.h1`
@@ -42,6 +43,7 @@ const About = () => {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 2%;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
   `
 
   const StyledP = styled.p`
@@ -61,6 +63,7 @@ const About = () => {
   padding: 1rem;
   background-color: #50576A;
   color: white;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
   `
 
   const StyledInfoSection = styled.div`
@@ -87,6 +90,7 @@ const About = () => {
   text-align: center;
   min-height: 100rem;
   background-color: ${c.wkitBlue};
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
   `
   
   return (

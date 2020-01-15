@@ -13,6 +13,7 @@ const Policy = () => {
   flex-direction: column;
   justify-content: flex-start;
   padding: 3%;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
   `
   
   const StyledH1 = styled.h1`
