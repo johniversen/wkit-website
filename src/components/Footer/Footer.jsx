@@ -44,11 +44,12 @@ const Footer = (props) => {
   const StyledSection = styled.section`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: row;
+  flex-wrap: wrap;
   min-height: 5rem;
-  width: 90%;
-  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
   `
 
   const HeaderImg = styled.img.attrs({
@@ -66,7 +67,7 @@ const Footer = (props) => {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 100%;
+  flex-wrap: wrap;
   `
 
   const StyledA = styled.a`

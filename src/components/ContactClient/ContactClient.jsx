@@ -50,7 +50,6 @@ export default function ContactClient() {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
   padding: 1rem;
   margin-top: 2rem;
   `

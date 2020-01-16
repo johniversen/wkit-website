@@ -51,20 +51,20 @@ const Header = (props) => {
     window.scrollTo(0, 0)
   }
 
-  const StyledSticky = styled.div`
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: white;
-  z-index: 102;
-  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
-  `
+  // const StyledSticky = styled.div`
+  // position: fixed;
+  // top: 0;
+  // background-color: white;
+  // z-index: 102;
+  // box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+  // `
 
   const StyledSection = styled.section`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: row;
+  flex-wrap: wrap;
   min-height: 5rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -85,7 +85,7 @@ const Header = (props) => {
   `
 
   return (
-    <StyledSticky>
+    //<StyledSticky>
       <StyledSection>
         <StyledA>
           <HeaderImg onClick={homeClick} />
@@ -105,7 +105,7 @@ const Header = (props) => {
           </ButtonGroup>
         </div>
       </StyledSection>
-    </StyledSticky>
+    //</StyledSticky>
   );
 }
 

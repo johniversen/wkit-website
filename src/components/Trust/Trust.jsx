@@ -20,7 +20,6 @@ const Trust = () => {
   align-items: flex-start;
   justify-content: center;
   text-align: center;
-  width: 100%;
   background-color: #E7F1F8;
   padding: 1rem;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
