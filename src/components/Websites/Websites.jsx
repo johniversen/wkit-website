@@ -89,129 +89,7 @@ const Websites = () => {
   }
   `
 
-  const AziaImg = styled.img.attrs({
-    src: Azia
-  })`
-  cursor: pointer;
-  object-fit: cover;
-  max-width: 100%;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-  `
-
-  const BriggenImg = styled.img.attrs({
-    src: Briggen
-  })`
-  cursor: pointer;
-  object-fit: cover;
-  max-width: 100%;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-  `
-
-  const JjflyttImg = styled.img.attrs({
-    src: Jjflytt
-  })`
-  cursor: pointer;
-  object-fit: cover;
-  max-width: 100%;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-  `
-
-  const PrimetrackerImg = styled.img.attrs({
-    src: Primetracker
-  })`
-  cursor: pointer;
-  object-fit: cover;
-  max-width: 100%;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-  `
-
-  const RideImg = styled.img.attrs({
-    src: Ride
-  })`
-  cursor: pointer;
-  object-fit: cover;
-  max-width: 100%;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-  `
-
-  const ThailandboImg = styled.img.attrs({
-    src: Thailandbo
-  })`
-  cursor: pointer;
-  object-fit: cover;
-  max-width: 100%;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-  `
-
-  const UniterImg = styled.img.attrs({
-    src: Uniter
-  })`
-  cursor: pointer;
-  object-fit: cover;
-  max-width: 100%;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-  `
-
-  const WcrsImg = styled.img.attrs({
-    src: Wcrs
-  })`
-  cursor: pointer;
-  object-fit: cover;
-  max-width: 100%;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-  `
-
-  const PlaceringsImg = styled.img.attrs({
-    src: Placeringsbanken
-  })`
+  const Thumbnail = styled.img`
   cursor: pointer;
   object-fit: cover;
   max-width: 100%;
@@ -239,31 +117,31 @@ const Websites = () => {
       </StyledTopSection>
       <StyledBottomSection>
         <StyledWebsiteExample>
-          <AziaImg onClick={ () => window.location.href = "http://aziawoksushi.se/"}/>
+          <Thumbnail src={Azia} onClick={ () => window.location.href = "http://aziawoksushi.se/"}/>
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          <BriggenImg onClick={ () => window.location.href = "http://www.restaurang-briggen.se/"}/>
+          <Thumbnail src={Briggen} onClick={ () => window.location.href = "http://www.restaurang-briggen.se/"}/>
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          <JjflyttImg onClick={ () => window.location.href = "https://www.jjflytt.se/"}/>
+          <Thumbnail src={Jjflytt} onClick={ () => window.location.href = "https://www.jjflytt.se/"}/>
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          <PrimetrackerImg onClick={ () => window.location.href = "https://primetracker.org/"}/>
+          <Thumbnail src={Primetracker} onClick={ () => window.location.href = "https://primetracker.org/"}/>
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          <RideImg onClick={ () => window.location.href = "https://rideexecutivesearch.se/"}/>
+          <Thumbnail src={Ride} onClick={ () => window.location.href = "https://rideexecutivesearch.se/"}/>
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          <ThailandboImg onClick={ () => window.location.href = "https://thailandbo.se/sv/hem/"}/>
+          <Thumbnail src={Thailandbo} onClick={ () => window.location.href = "https://thailandbo.se/sv/hem/"}/>
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          <UniterImg onClick={ () => window.location.href = "https://uniter.se/"}/>
+          <Thumbnail src={Uniter} onClick={ () => window.location.href = "https://uniter.se/"}/>
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          <WcrsImg onClick={ () => window.location.href = "https://wcrs.se/"}/>
+          <Thumbnail src={Wcrs} onClick={ () => window.location.href = "https://wcrs.se/"}/>
         </StyledWebsiteExample>
         <StyledWebsiteExample>
-          <PlaceringsImg onClick={ () => window.location.href = "https://placeringsbanken.se/"}/>
+          <Thumbnail src={Placeringsbanken} onClick={ () => window.location.href = "https://placeringsbanken.se/"}/>
         </StyledWebsiteExample>
       </StyledBottomSection>
     </StyledSection>

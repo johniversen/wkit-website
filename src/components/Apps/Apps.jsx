@@ -83,74 +83,8 @@ const Apps = () => {
     width: 100%;
   }
   `
-
-  const CentralYouImg = styled.img.attrs({
-    src: CentralYou
-  })`
-  cursor: pointer;
-  object-fit: cover;
-  max-width: 100%;
-  max-height: 15rem;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-  `
-
-  const PursuitsImg = styled.img.attrs({
-    src: Pursuits
-  })`
-  cursor: pointer;
-  object-fit: cover;
-  max-width: 100%;
-  max-height: 15rem;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-  `
-
-  const KnipImg = styled.img.attrs({
-    src: Knip
-  })`
-  cursor: pointer;
-  object-fit: cover;
-  max-width: 100%;
-  max-height: 15rem;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-  `
-
-  const TwoDicesImg = styled.img.attrs({
-    src: TwoDices
-  })`
-  cursor: pointer;
-  object-fit: cover;
-  max-width: 100%;
-  max-height: 15rem;
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all .2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-  `
-
-  const EasyJacketImg = styled.img.attrs({
-    src: EasyJacket
-  })`
+  
+  const Thumbnail = styled.img`
   cursor: pointer;
   object-fit: cover;
   max-width: 100%;
@@ -179,19 +113,19 @@ const Apps = () => {
       </StyledTopSection>
       <StyledBottomSection>
         <StyledAppExample>
-          <CentralYouImg onClick={ () => window.location.href = "https://apps.apple.com/us/app/central-you/id1229057149"}/>
+          <Thumbnail src={CentralYou} onClick={ () => window.location.href = "https://apps.apple.com/us/app/central-you/id1229057149"}/>
         </StyledAppExample>
         <StyledAppExample>
-          <EasyJacketImg onClick={ () => window.location.href = "https://play.google.com/store/apps/details?id=com.westmissiontechnologies.easyjacket"}/>
+          <Thumbnail src={EasyJacket} onClick={ () => window.location.href = "https://play.google.com/store/apps/details?id=com.westmissiontechnologies.easyjacket"}/>
         </StyledAppExample>
         <StyledAppExample>
-          <KnipImg onClick={ () => window.location.href = "https://play.google.com/store/apps/details?id=se.knipapp.knip_app"}/>
+          <Thumbnail src={Knip} onClick={ () => window.location.href = "https://play.google.com/store/apps/details?id=se.knipapp.knip_app"}/>
         </StyledAppExample>
         <StyledAppExample>
-          <TwoDicesImg onClick={ () => window.location.href = "https://play.google.com/store/apps/details?id=com.twodices.twodicescustomer"}/>
+          <Thumbnail src={TwoDices} onClick={ () => window.location.href = "https://play.google.com/store/apps/details?id=com.twodices.twodicescustomer"}/>
         </StyledAppExample>
         <StyledAppExample>
-          <PursuitsImg onClick={ () => window.location.href = "https://play.google.com/store/apps/details?id=com.pursuits"}/>
+          <Thumbnail src={Pursuits} onClick={ () => window.location.href = "https://play.google.com/store/apps/details?id=com.pursuits"}/>
         </StyledAppExample>
       </StyledBottomSection>
     </StyledSection>

@@ -42,121 +42,7 @@ const Trust = () => {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.13);
   `
 
-  const NetlightImg = styled.img.attrs({
-    src: Netlight
-  })`
-  width: 10rem;
-  height: 5rem;
-  object-fit: contain;
-  margin-right: 1rem;
-  cursor: pointer;
-  border-radius: 3px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  margin: 1%;
-  padding: 1%;
-  `
-
-  const DatatjejImg = styled.img.attrs({
-    src: Datatjej
-  })`
-  width: 10rem;
-  height: 5rem;
-  object-fit: contain;
-  margin-right: 1rem;
-  cursor: pointer;
-  border-radius: 3px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  margin: 1%;
-  padding: 1%;
-  `
-
-  const LeadImg = styled.img.attrs({
-    src: Lead
-  })`
-  width: 10rem;
-  height: 5rem;
-  object-fit: contain;
-  margin-right: 1rem;
-  cursor: pointer;
-  border-radius: 3px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  margin: 1%;
-  padding: 1%;
-  `
-
-  const RandstadImg = styled.img.attrs({
-    src: Randstad
-  })`
-  width: 10rem;
-  height: 5rem;
-  object-fit: contain;
-  margin-right: 1rem;
-  cursor: pointer;
-  border-radius: 3px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  margin: 1%;
-  padding: 1%;
-  `
-  
-  const WtmgImg = styled.img.attrs({
-    src: Wtmg
-  })`
-  width: 10rem;
-  height: 5rem;
-  object-fit: contain;
-  margin-right: 1rem;
-  cursor: pointer;
-  border-radius: 3px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  margin: 1%;
-  padding: 1%;
-  `
-
-  const KthImg = styled.img.attrs({
-    src: Kth
-  })`
-  width: 10rem;
-  height: 5rem;
-  object-fit: contain;
-  margin-right: 1rem;
-  cursor: pointer;
-  border-radius: 3px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  margin: 1%;
-  padding: 1%;
-  `
-
-  const ChalmersImg = styled.img.attrs({
-    src: Chalmers
-  })`
-  width: 10rem;
-  height: 5rem;
-  object-fit: contain;
-  margin-right: 1rem;
-  cursor: pointer;
-  border-radius: 3px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  margin: 1%;
-  padding: 1%;
-  `
-
-  const LundImg = styled.img.attrs({
-    src: Lund
-  })`
-  width: 10rem;
-  height: 5rem;
-  object-fit: contain;
-  margin-right: 1rem;
-  cursor: pointer;
-  border-radius: 3px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  margin: 1%;
-  padding: 1%;
-  `
-
-  const LinkopingImg = styled.img.attrs({
-    src: Linkoping
-  })`
+  const Logo = styled.img`
   width: 10rem;
   height: 5rem;
   object-fit: contain;
@@ -172,18 +58,18 @@ const Trust = () => {
     <StyledSection>
       <PartnersSection>
         <StyledH1>Våra partners</StyledH1>
-        <NetlightImg onClick={ () => window.location.href = "https://www.netlight.com/"}/>
-        <DatatjejImg onClick={ () => window.location.href = "https://datatjej.se/"}/>
-        <WtmgImg onClick={ () => window.location.href = "https://wtmg.se/"}/>
-        <LeadImg onClick={ () => window.location.href = "https://lead.se/"}/>
-        <RandstadImg onClick={ () => window.location.href = "https://www.randstad.se/"}/>
+        <Logo src={Netlight} onClick={ () => window.location.href = "https://www.netlight.com/"}/>
+        <Logo src={Wtmg} onClick={ () => window.location.href = "https://wtmg.se/"}/>
+        <Logo src={Datatjej} onClick={ () => window.location.href = "https://datatjej.se/"}/>
+        <Logo src={Lead} onClick={ () => window.location.href = "https://lead.se/"}/>
+        <Logo src={Randstad} onClick={ () => window.location.href = "https://www.randstad.se/"}/>
       </PartnersSection>
       <UniSecton>
         <StyledH1>Vi har studenter från Sveriges bästa universitet</StyledH1>
-        <KthImg onClick={ () => window.location.href = "https://www.kth.se/"}/>
-        <ChalmersImg onClick={ () => window.location.href = "https://www.chalmers.se/sv/Sidor/default.aspx"}/>
-        <LundImg onClick={ () => window.location.href = "https://www.lu.se/start"}/>
-        <LinkopingImg onClick={ () => window.location.href = "https://liu.se/"}/>
+        <Logo src={Kth} onClick={ () => window.location.href = "https://www.kth.se/"}/>
+        <Logo src={Chalmers} onClick={ () => window.location.href = "https://www.chalmers.se/sv/Sidor/default.aspx"}/>
+        <Logo src={Lund} onClick={ () => window.location.href = "https://www.lu.se/start"}/>
+        <Logo src={Linkoping} onClick={ () => window.location.href = "https://liu.se/"}/>
       </UniSecton>
     </StyledSection>
   )
