@@ -133,11 +133,35 @@ export default function ContactCareer() {
   cursor: pointer;
   `
 
+  const InfoContainer = styled.section`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 1rem;
+  width: 80%;
+  `
+
+  const StyledInfoSection = styled.a`
+  padding: 2%;
+  width: 40%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: ${c.wkitBlue};
+  `
+
   return (
     <>
     <StyledSection id="contact">
       <StyledH1>ANSÖK NU!</StyledH1>
       <StyledH2>FYLL I FORMULÄRET NEDAN OCH SKRIV EN KORT PRESENTATION!</StyledH2>
+      <InfoContainer>
+        <StyledInfoSection href="tel:010-1510899"><i class="fas fa-phone"></i> 010 - 151 08 99</StyledInfoSection>
+        <StyledInfoSection href="mailto:rekrytering@weknowit.se"><i class="fas fa-envelope"></i> rekrytering@weknowit.se</StyledInfoSection>
+      </InfoContainer>
       <StyledForm className="contact-form" onSubmit={sendEmail}>
         <StyledInput id="name" type="text" name="user_name" placeholder="Namn" required />
         <StyledInput id="education" type="text" name="education" placeholder="Utbildning" required />

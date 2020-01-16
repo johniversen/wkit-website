@@ -50,7 +50,6 @@ const About = () => {
   max-height: 80%;
   max-width: 40%;
   font-size: 1.2rem;
-  
   `
 
   const InfoContainer = styled.section`
