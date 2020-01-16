@@ -45,7 +45,9 @@ const Trust = () => {
   const NetlightImg = styled.img.attrs({
     src: Netlight
   })`
-  height: 2.5rem;
+  width: 10rem;
+  height: 5rem;
+  object-fit: contain;
   margin-right: 1rem;
   cursor: pointer;
   border-radius: 3px;
@@ -57,7 +59,9 @@ const Trust = () => {
   const DatatjejImg = styled.img.attrs({
     src: Datatjej
   })`
-  height: 2.5rem;
+  width: 10rem;
+  height: 5rem;
+  object-fit: contain;
   margin-right: 1rem;
   cursor: pointer;
   border-radius: 3px;
@@ -69,7 +73,9 @@ const Trust = () => {
   const LeadImg = styled.img.attrs({
     src: Lead
   })`
-  height: 2.5rem;
+  width: 10rem;
+  height: 5rem;
+  object-fit: contain;
   margin-right: 1rem;
   cursor: pointer;
   border-radius: 3px;
@@ -81,7 +87,9 @@ const Trust = () => {
   const RandstadImg = styled.img.attrs({
     src: Randstad
   })`
-  height: 2.5rem;
+  width: 10rem;
+  height: 5rem;
+  object-fit: contain;
   margin-right: 1rem;
   cursor: pointer;
   border-radius: 3px;
@@ -93,7 +101,9 @@ const Trust = () => {
   const WtmgImg = styled.img.attrs({
     src: Wtmg
   })`
-  height: 2.5rem;
+  width: 10rem;
+  height: 5rem;
+  object-fit: contain;
   margin-right: 1rem;
   cursor: pointer;
   border-radius: 3px;
@@ -105,7 +115,9 @@ const Trust = () => {
   const KthImg = styled.img.attrs({
     src: Kth
   })`
-  height: 3.5rem;
+  width: 10rem;
+  height: 5rem;
+  object-fit: contain;
   margin-right: 1rem;
   cursor: pointer;
   border-radius: 3px;
@@ -117,7 +129,9 @@ const Trust = () => {
   const ChalmersImg = styled.img.attrs({
     src: Chalmers
   })`
-  height: 3.5rem;
+  width: 10rem;
+  height: 5rem;
+  object-fit: contain;
   margin-right: 1rem;
   cursor: pointer;
   border-radius: 3px;
@@ -129,7 +143,9 @@ const Trust = () => {
   const LundImg = styled.img.attrs({
     src: Lund
   })`
-  height: 3.5rem;
+  width: 10rem;
+  height: 5rem;
+  object-fit: contain;
   margin-right: 1rem;
   cursor: pointer;
   border-radius: 3px;
@@ -141,7 +157,9 @@ const Trust = () => {
   const LinkopingImg = styled.img.attrs({
     src: Linkoping
   })`
-  height: 3.5rem;
+  width: 10rem;
+  height: 5rem;
+  object-fit: contain;
   margin-right: 1rem;
   cursor: pointer;
   border-radius: 3px;
