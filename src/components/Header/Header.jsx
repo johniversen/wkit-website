@@ -51,14 +51,6 @@ const Header = (props) => {
     window.scrollTo(0, 0)
   }
 
-  // const StyledSticky = styled.div`
-  // position: fixed;
-  // top: 0;
-  // background-color: white;
-  // z-index: 102;
-  // box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
-  // `
-
   const StyledSection = styled.section`
   display: flex;
   align-items: center;
