@@ -7,7 +7,7 @@ import './ContactClientStyles.css';
 
 // Detta är kontaktformuläret för kunder.
 
-export default function ContactClient() {
+const Form = ({ handleChange }) => {
   const c = { ...COLORS };
 
   function sendEmail(e) {
@@ -180,3 +180,5 @@ export default function ContactClient() {
     </>
   );
 }
+
+export default Form;
