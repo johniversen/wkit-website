@@ -73,8 +73,6 @@ export default function ContactCareer() {
 
   const StyledForm = styled.form`
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 25% 25% 25% 25%;
   grid-template-areas:
   "name education message message"
   "email phone message message"
@@ -85,6 +83,21 @@ export default function ContactCareer() {
   text-align: left;
   flex-wrap: wrap;
   width: 70%;
+  
+  @media (max-width: 768px) {
+    grid-template-areas:
+    "name"
+    "education"
+    "email"
+    "phone"
+    "post"
+    "region"
+    "github"
+    "graduation"
+    "message"
+    "found"
+    "send"
+  }
   `
   
   const StyledTextArea = styled.textarea`
@@ -142,6 +155,10 @@ export default function ContactCareer() {
   text-align: center;
   padding: 1rem;
   width: 80%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
   `
 
   const StyledInfoSection = styled.a`
@@ -151,6 +168,10 @@ export default function ContactCareer() {
   font-weight: bold;
   text-decoration: none;
   color: ${c.wkitBlue};
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
   `
 
   return (

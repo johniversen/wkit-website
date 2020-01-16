@@ -92,8 +92,6 @@ export default function ContactClient() {
 
   const StyledForm = styled.form`
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 25% 25% 25% 25%;
   grid-template-areas:
   "name typeOfPerson message message"
   "email phone message message"
@@ -104,6 +102,20 @@ export default function ContactClient() {
   text-align: left;
   flex-wrap: wrap;
   width: 70%;
+
+  @media (max-width: 768px) {
+    grid-template-areas:
+    "name"
+    "typeOfPerson"
+    "email"
+    "phone"
+    "region"
+    "subject"
+    "found"
+    "budget"
+    "message"
+    "send"
+  }
   `
   
   const StyledTextArea = styled.textarea`
@@ -157,10 +169,14 @@ export default function ContactClient() {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
   padding: 1rem;
   width: 80%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
   `
 
   const StyledInfoSection = styled.a`
@@ -170,6 +186,10 @@ export default function ContactClient() {
   font-weight: bold;
   text-decoration: none;
   color: ${c.wkitBlue};
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
   `
 
   return (
