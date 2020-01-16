@@ -1,4 +1,26 @@
 # We Know IT 
+
+## Setup för emailJs
+Av säkerhetsskäl finns inte setup-filerna för emailJs inkluderade i repot. För att få emailJs att fungera krävs det att du själv skapar dessa. Jag kommer nedan gå igenom för strukturen för dessa. Båda filerna ska ligga i wkit-website/src/.
+
+emailSetupCareer.js
+```
+export const config = {
+  serviceID: 'DITT_SERVICE_ID',             // Hittas under den mailadress du vill ta emot till.
+  templateID: 'KONTAKFORMULÄRETS_ID',       // Hittas bland dina templates för formulär. Välj det som är för karriär.
+  userID: 'DITT_ANVÄNDAR_ID'                // Hittas under din användare -> API Keys.
+}
+```
+
+emailSetupClient.js
+```
+export const config = {
+  serviceID: 'DITT_SERVICE_ID',             // Hittas under den mailadress du vill ta emot till.
+  templateID: 'KONTAKFORMULÄRETS_ID',       // Hittas bland dina templates för formulär. Välj det som är för klienter.
+  userID: 'DITT_ANVÄNDAR_ID'                // Hittas under din användare -> API Keys.
+}
+```
+
 ## Förklaring av filstruktur
 Projektet ivolverad en relativt standardiserad filstruktur som ofta förekommer i React-projekt. Alla komponenter kan finnas i mappen src/components. Varje komponent har där en egen mappen innehållande två filer. För att göra ändringar i utseende och innehåll görs detta i den fil som heter samma sak som komponenten. T.ex. för Contact görs ändringar i src/components/Contact/Contact.jsx, och inte i index.tsx i samma mapp.
 
