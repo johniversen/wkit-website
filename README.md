@@ -1,7 +1,7 @@
 # We Know IT 
 
 ## Setup för emailJs
-Av säkerhetsskäl finns inte setup-filerna för emailJs inkluderade i repot. För att få emailJs att fungera krävs det att du själv skapar dessa. Jag kommer nedan gå igenom för strukturen för dessa. Båda filerna ska ligga i wkit-website/src/.
+Av säkerhetsskäl finns inte setup-filerna för emailJs inkluderade i repot. För att få emailJs att fungera krävs det att du själv skapar dessa. Jag kommer nedan gå igenom för strukturen för dessa. Båda filerna ska ligga i wkit-website/src/. För inställningar och setup av emailJs på emailjs.com, se vår Drive.
 
 emailSetupCareer.js
 ```
