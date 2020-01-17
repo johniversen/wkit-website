@@ -43,12 +43,20 @@ const About = () => {
   flex-wrap: wrap;
   padding: 2%;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 653px) {
+    flex-direction: column;
+  }
   `
 
   const StyledP = styled.p`
-  max-height: 80%;
-  max-width: 40%;
+  width: 45%;
+  padding: 1rem;
   font-size: 1.2rem;
+
+  @media (max-width: 653px) {
+    width: 90%;
+  }
   `
 
   const InfoContainer = styled.section`
@@ -62,11 +70,19 @@ const About = () => {
   background-color: #50576A;
   color: white;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+  }
   `
 
   const StyledInfoSection = styled.div`
   padding: 2%;
   width: 40%;
+
+  @media (max-width: 425px) {
+    width: 90%;
+  }
   `
 
   const InfoP = styled.p`

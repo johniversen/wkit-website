@@ -69,7 +69,7 @@ const Header = (props) => {
   padding-right: 1rem;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     display: none;
   }
   `
@@ -85,7 +85,7 @@ const Header = (props) => {
   padding-right: 1rem;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
 
-  @media (min-width: 426px) {
+  @media (min-width: 769px) {
     display: none;
   }
   `
