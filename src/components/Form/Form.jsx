@@ -7,9 +7,9 @@ import './ContactClientStyles.css';
 
 // Detta är kontaktformuläret för kunder.
 
-const Form = ({ handleChange }) => {
+const Form = ({ setDiv }) => {
   const c = { ...COLORS };
-
+  
   function sendEmail(e) {
     e.preventDefault();
 
@@ -142,7 +142,7 @@ const Form = ({ handleChange }) => {
           <option value="Malmö / Lund">Malmö / Lund</option>
           <option value="Annan ort">Annan ort</option>
         </Select>
-        <Select onChange={handleChange} id="subject" name="subject" required>
+        <Select onChange={setDiv} id="subject" name="subject" required>
           <option value="" hidden>
             Ämne
           </option>
