@@ -88,7 +88,7 @@ const ContactClient = () => {
         <StyledInfoSection href="tel:010-1510899"><i class="fas fa-phone"></i> 010 - 151 08 99</StyledInfoSection>
         <StyledInfoSection href="mailto:support@weknowit.se"><i class="fas fa-envelope"></i> support@weknowit.se</StyledInfoSection>
       </InfoContainer>
-      <FormContainer onChange={() => setDiv()} />
+      <FormContainer formFunction={() => setDiv()} />
       {toggledDiv === 'Hemsida' && <ToggledDiv>
         <p>Försök besvara följande i ditt meddelande:</p>
         <ul>

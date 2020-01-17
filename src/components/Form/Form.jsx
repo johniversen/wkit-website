@@ -7,7 +7,7 @@ import './ContactClientStyles.css';
 
 // Detta är kontaktformuläret för kunder.
 
-const Form = ({ setDiv }) => {
+const Form = (props) => {
   const c = { ...COLORS };
   
   function sendEmail(e) {
@@ -142,7 +142,7 @@ const Form = ({ setDiv }) => {
           <option value="Malmö / Lund">Malmö / Lund</option>
           <option value="Annan ort">Annan ort</option>
         </Select>
-        <Select onChange={() => setDiv()} id="subject" name="subject" required>
+        <Select onChange = { () => props.formFunction() } id="subject" name="subject" required>
           <option value="" hidden>
             Ämne
           </option>
