@@ -142,7 +142,7 @@ const Form = ({ setDiv }) => {
           <option value="Malmö / Lund">Malmö / Lund</option>
           <option value="Annan ort">Annan ort</option>
         </Select>
-        <Select onChange={setDiv} id="subject" name="subject" required>
+        <Select onChange={() => setDiv()} id="subject" name="subject" required>
           <option value="" hidden>
             Ämne
           </option>

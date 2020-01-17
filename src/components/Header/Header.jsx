@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from 'styled-components';
 import { withRouter } from "react-router";
 import Logo from '../../assets/logo.png';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import { makeStyles } from '@material-ui/core/styles';
+import { COLORS } from '../../variables/colors';
 
 // Detta är headern.
 
@@ -21,6 +22,8 @@ const useStyles = makeStyles(theme => ({
 
 const Header = (props) => {
   const classes = useStyles();
+  const c = { ...COLORS };
+  const [toggledBurgerMenu, setCurrentMenu] = useState('defaul');
 
   const facebookClick = () => {
     window.location.href = "https://www.facebook.com/WeKnowITswe/";
@@ -51,6 +54,10 @@ const Header = (props) => {
     window.scrollTo(0, 0)
   }
 
+  const toggleBurgerMenu = () => {
+    console.log("Fired");
+  }
+
   const StyledSection = styled.section`
   display: flex;
   align-items: center;
@@ -60,8 +67,34 @@ const Header = (props) => {
   min-height: 5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 425px) {
+    display: none;
+  }
   `
 
+  const StyledMobileSection = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+
+  @media (min-width: 426px) {
+    display: none;
+  }
+  `
+
+  const Burger = styled.div`
+  font-size: 2.5rem;
+  color: ${c.wkitBlue};
+  `
+  
   const HeaderImg = styled.img.attrs({
     src: Logo
   })`
@@ -77,7 +110,7 @@ const Header = (props) => {
   `
 
   return (
-    //<StyledSticky>
+      <>
       <StyledSection>
         <StyledA>
           <HeaderImg onClick={homeClick} />
@@ -97,7 +130,15 @@ const Header = (props) => {
           </ButtonGroup>
         </div>
       </StyledSection>
-    //</StyledSticky>
+      <StyledMobileSection>
+        <StyledA>
+          <HeaderImg onClick={homeClick} />
+        </StyledA>
+        <Burger onClick={toggleBurgerMenu}>
+          <i class="fas fa-bars"></i>
+        </Burger>
+      </StyledMobileSection>
+      </>
   );
 }
 

@@ -26,7 +26,6 @@ const Trust = () => {
   `
 
   const PartnersSection = styled.section`
-  width: 45%;
   `
 
   const UniSecton = styled.section`

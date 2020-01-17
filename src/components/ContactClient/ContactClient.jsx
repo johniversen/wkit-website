@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { COLORS } from '../../variables/colors';
 import FormContainer from '../Form';
 
-export default function ContactClient() {
+const ContactClient = () => {
   const c = { ...COLORS };
   const [toggledDiv, setCurrentDiv] = useState('default');
 
@@ -88,7 +88,7 @@ export default function ContactClient() {
         <StyledInfoSection href="tel:010-1510899"><i class="fas fa-phone"></i> 010 - 151 08 99</StyledInfoSection>
         <StyledInfoSection href="mailto:support@weknowit.se"><i class="fas fa-envelope"></i> support@weknowit.se</StyledInfoSection>
       </InfoContainer>
-      <FormContainer onChange={setDiv} />
+      <FormContainer onChange={() => setDiv()} />
       {toggledDiv === 'Hemsida' && <ToggledDiv>
         <p>Försök besvara följande i ditt meddelande:</p>
         <ul>
@@ -109,3 +109,5 @@ export default function ContactClient() {
     </>
   );
 }
+
+export default ContactClient;

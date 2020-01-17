@@ -1,10 +1,10 @@
 import React from 'react';
 import Form from './Form';
 
-const FormContainer = ({ setDiv }) => {
+const FormContainer = (props) => {
   return (
     <>
-    <Form />
+    <Form changeFunction ={ () => props.setDiv() }/>
     </>
   )
 }
