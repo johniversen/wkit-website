@@ -1,11 +1,10 @@
 import React from 'react';
 import Form from './Form';
 
-const FormContainer = (props) => {
-  console.log(props);
+const FormContainer = () => {
   return (
     <>
-    <Form formFunction />
+    <Form />
     </>
   )
 }

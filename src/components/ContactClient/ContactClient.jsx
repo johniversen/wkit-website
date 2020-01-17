@@ -5,12 +5,12 @@ import FormContainer from '../Form';
 
 const ContactClient = () => {
   const c = { ...COLORS };
-  const [toggledDiv, setCurrentDiv] = useState('default');
+
+  // Kommer användas för att toggla info-div med angivelser för vad som ska finns i meddalndet.
+  /* const [toggledDiv, setCurrentDiv] = useState('default');
 
   const setDiv = () => {
-    // const newValue = e.target.value;
-    // setCurrentDiv(newValue);
-    console.log("Changed");
+    setCurrentDiv(newValue);
   }
 
   const ToggledDiv = styled.div`
@@ -24,7 +24,7 @@ const ContactClient = () => {
   & > ul {
     margin-left: 1rem;
   }
-  `
+  ` */
 
   const StyledSection = styled.section`
   display: flex;
@@ -88,8 +88,8 @@ const ContactClient = () => {
         <StyledInfoSection href="tel:010-1510899"><i class="fas fa-phone"></i> 010 - 151 08 99</StyledInfoSection>
         <StyledInfoSection href="mailto:support@weknowit.se"><i class="fas fa-envelope"></i> support@weknowit.se</StyledInfoSection>
       </InfoContainer>
-      <FormContainer formFunction={() => setDiv()} />
-      {toggledDiv === 'Hemsida' && <ToggledDiv>
+      <FormContainer />
+      {/* {toggledDiv === 'Hemsida' && <ToggledDiv>
         <p>Försök besvara följande i ditt meddelande:</p>
         <ul>
           <li>Vad ska hemsidan användas till?</li>
@@ -104,7 +104,7 @@ const ContactClient = () => {
           <li>Vad ska applikationen innehålla?</li>
           <li>Har du idag någon inspiration för din applikation?</li>
         </ul>
-      </ToggledDiv>}
+      </ToggledDiv>} */}
     </StyledSection>
     </>
   );

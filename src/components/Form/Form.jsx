@@ -7,7 +7,7 @@ import './ContactClientStyles.css';
 
 // Detta är kontaktformuläret för kunder.
 
-const Form = (props) => {
+const Form = () => {
   const c = { ...COLORS };
   
   function sendEmail(e) {
@@ -23,6 +23,12 @@ const Form = (props) => {
 
     e.target.reset();
   }
+
+  /* const handleChange = (e) => {
+    e.preventDefault();
+    let newValue = e.target.value;
+    console.log(newValue);
+  } */
 
   const Select = styled.select`
   width: 86%;
@@ -142,7 +148,7 @@ const Form = (props) => {
           <option value="Malmö / Lund">Malmö / Lund</option>
           <option value="Annan ort">Annan ort</option>
         </Select>
-        <Select onChange = { () => props.formFunction() } id="subject" name="subject" required>
+        <Select id="subject" name="subject" required>
           <option value="" hidden>
             Ämne
           </option>

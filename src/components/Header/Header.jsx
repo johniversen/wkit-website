@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
 const Header = (props) => {
   const classes = useStyles();
   const c = { ...COLORS };
-  const [toggledBurgerMenu, setCurrentMenu] = useState('defaul');
+  const [toggledBurgerMenu, setCurrentMenu] = useState('default');
 
   const facebookClick = () => {
     window.location.href = "https://www.facebook.com/WeKnowITswe/";
@@ -55,7 +55,7 @@ const Header = (props) => {
   }
 
   const toggleBurgerMenu = () => {
-    console.log("Fired");
+    toggledBurgerMenu === 'default' ? setCurrentMenu('burgerMenu'): setCurrentMenu('default');
   }
 
   const StyledSection = styled.section`
@@ -93,6 +93,11 @@ const Header = (props) => {
   const Burger = styled.div`
   font-size: 2.5rem;
   color: ${c.wkitBlue};
+  `
+
+  const BurgerMenu = styled.div`
+  background-color: white;
+  min-height: 5rem;
   `
   
   const HeaderImg = styled.img.attrs({
@@ -138,6 +143,22 @@ const Header = (props) => {
           <i class="fas fa-bars"></i>
         </Burger>
       </StyledMobileSection>
+      {toggledBurgerMenu === 'burgerMenu' && <BurgerMenu>
+      <div className={classes.root}>
+          <ButtonGroup size="large" aria-label="large outlined button group">
+            <Button onClick={aboutClick}>OM OSS</Button>
+            <Button href="#contact">KONTAKT</Button>
+            <Button onClick={careerClick}>KARRIÄR</Button>
+          </ButtonGroup>
+        </div>
+        <div className={classes.root}>
+          <ButtonGroup size="large" aria-label="large outlined button group">
+            <Button onClick={facebookClick}><i className="fab fa-facebook-f"></i></Button>
+            <Button onclick={instagramClick}><i className="fab fa-instagram"></i></Button>
+            <Button onClick={linkedinClick}><i className="fab fa-linkedin"></i></Button>
+          </ButtonGroup>
+        </div>
+      </BurgerMenu>}
       </>
   );
 }

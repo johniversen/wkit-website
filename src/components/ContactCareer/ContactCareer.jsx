@@ -213,10 +213,12 @@ export default function ContactCareer() {
             Hur hittade du We Know IT?
           </option>
           <option value="Via Google">Via Google</option>
-          <option value="Via sociala medier">Via sociala medier</option>
-          <option value="Via en annons">Via en annons</option>
-          <option value="Via ett tips">Via ett tips</option>
-          <option value="Jag är en tidigare kund">Jag är en tidigare kund</option>
+          <option value="Via Facebook">Via Facebook</option>
+          <option value="Via andra sociala medier">Via andra sociala medier</option>
+          <option value="Via en vän">Via en vän</option>
+          <option value="Via en mässa">Via en mässa</option>
+          <option value="Via flyers på universitetet">Via flyers på universitetet</option>
+          <option value="Via information från We Know IT på en föreläsning">Via information från We Know IT på en föreläsning</option>
           <option value="På annat vis">På annat vis</option>
         </Select>
         <StyledTextArea id="message" name="message" placeholder="Personligt brev (frivilligt)" />
